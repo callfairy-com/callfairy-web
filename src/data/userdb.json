@@ -1,0 +1,20 @@
+[
+  {
+  "name": "John Doe",
+  "email": "john.doe@example.com",
+  "password": "securepassword123",
+  "role": "user"
+  },
+  {
+  "name": "Jane Smith",
+  "email": "john.doe@example.com",
+  "password": "anothersecurepassword456",
+  "role": "admin"
+  },
+  {
+  "name": "sid pawar",
+  "email": "sidpawar@gmail.com",
+  "password": "admin@123",
+  "role": "admin"
+  }
+]

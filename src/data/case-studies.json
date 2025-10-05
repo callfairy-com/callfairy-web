@@ -1,0 +1,21 @@
+{
+  "caseStudies": [
+    {
+      "id": 1,
+      "company": "Digital Hercules Innovation",
+      "logo": "https://bharattrustedsecurity.com/_assets/media/22a9f4e796df8b181c1bef2499345a45.png",
+      "summary": "Reduced response times by 70% with AI-assisted chat.",
+      "result": "Increased CSAT score by 25% within 3 months.",
+      "details": "DHI Corp integrated AI-driven chat systems to handle a surge in customer inquiries. With advanced natural language processing, they were able to reduce manual intervention, leading to significantly faster resolutions and a noticeable uplift in customer satisfaction."
+    },
+    {
+      "id": 2,
+      "company": "Bharat Trusted Security",
+      "logo": "https://bharattrustedsecurity.com/_assets/media/22a9f4e796df8b181c1bef2499345a45.png",
+      "summary": "Automated 60% of customer queries using CallFairy.",
+      "result": "Saved 1,200 agent hours per month.",
+      "details": "Bharat Trusted Security leveraged CallFairy’s automation platform to manage common customer questions such as account balances, transaction disputes, and card activations. The system freed up agent time and allowed human reps to focus on complex, high-value interactions."
+    }
+
+  ]
+}

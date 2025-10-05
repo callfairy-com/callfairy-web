@@ -1,0 +1,405 @@
+{
+  "metadata": {
+    "version": "1.2",
+    "updated": "2025-09-24",
+    "author": "Chatbot Dev Team",
+    "description": "Enhanced intents with real estate and manufacturing industry support."
+  },
+
+  "intents": {
+    "greeting": {
+      "responses": [
+        "Hello! 👋 How can I help you today?",
+        "Hi there! What can I do for you?",
+        "Hey! Great to see you. How can I assist?",
+        "Welcome! Need help with anything?",
+        "Good day! How may I be of service?",
+        "Hi! Ready to help you with whatever you need."
+      ],
+      "suggestedReplies": [
+        { "label": "Track my order", "intent": "order_status" },
+        { "label": "Product info", "intent": "product_info" },
+        { "label": "Contact agent", "intent": "contact_agent" },
+        { "label": "Real estate inquiry", "intent": "real_estate_inquiry" },
+        { "label": "Manufacturing product info", "intent": "manufacturing_product_info" },
+        { "label": "Schedule appointment", "intent": "appointment_schedule" }
+      ],
+      "context": "global"
+    },
+
+    "order_status": {
+      "responses": [
+        "I'd be happy to check that. Can you provide your Order ID?"
+      ],
+      "requiredSlots": ["order_id"],
+      "slotPrompts": {
+        "order_id": {
+          "prompt": "Please enter your Order ID (e.g., #12345).",
+          "validation": {
+            "regex": "^#?\\d{3,10}$",
+            "errorMessage": "Order ID must be a number, optionally prefixed with '#'."
+          }
+        }
+      },
+      "actions": ["fetchOrderStatus"],
+      "followUps": [
+        { "label": "Track another order", "intent": "order_status" },
+        { "label": "Contact agent", "intent": "contact_agent" }
+      ],
+      "context": "order"
+    },
+
+    "product_info": {
+      "responses": [
+        "Which product would you like to know about? You can share the product name or SKU."
+      ],
+      "requiredSlots": ["product_query"],
+      "slotPrompts": {
+        "product_query": {
+          "prompt": "Please provide the product name or SKU.",
+          "validation": {
+            "minLength": 2,
+            "maxLength": 100,
+            "errorMessage": "Please enter at least 2 characters for the product query."
+          }
+        }
+      },
+      "actions": ["searchProductDatabase"],
+      "followUps": [
+        { "label": "See similar products", "intent": "recommend_products" },
+        { "label": "Contact agent", "intent": "contact_agent" }
+      ],
+      "context": "product_search"
+    },
+
+    "contact_agent": {
+      "responses": [
+        "You can reach an agent by Call, Email, or WhatsApp. Which would you prefer?"
+      ],
+      "suggestedReplies": [
+        { "label": "Call", "intent": "agent_call" },
+        { "label": "Email", "intent": "agent_email" },
+        { "label": "WhatsApp", "intent": "agent_whatsapp" }
+      ],
+      "context": "contact"
+    },
+
+    "agent_call": {
+      "responses": [
+        "Call us at +91-800-555-0100. Would you like me to place the call on your device?"
+      ],
+      "actions": ["callAgent"],
+      "context": "contact"
+    },
+
+    "agent_email": {
+      "responses": [
+        "You can email our support team at support@example.com. Would you like me to compose an email for you?"
+      ],
+      "actions": ["composeEmail"],
+      "context": "contact"
+    },
+
+    "agent_whatsapp": {
+      "responses": [
+        "I'll prepare a WhatsApp message for an agent. Which department is this for?"
+      ],
+      "requiredSlots": ["department", "brief"],
+      "slotPrompts": {
+        "department": {
+          "prompt": "Which department? (Sales / Support / Billing)",
+          "validation": {
+            "allowedValues": ["Sales", "Support", "Billing"],
+            "errorMessage": "Please choose one of the following: Sales, Support, Billing."
+          }
+        },
+        "brief": {
+          "prompt": "Give a one-line summary of your issue.",
+          "validation": {
+            "minLength": 5,
+            "maxLength": 200,
+            "errorMessage": "Please provide a brief description between 5 and 200 characters."
+          }
+        }
+      },
+      "actions": ["sendWhatsAppToAgent"],
+      "postAction": {
+        "message": "I've created a WhatsApp message. Click to open WhatsApp and send it to the agent."
+      },
+      "context": "contact"
+    },
+
+    "appointment_schedule": {
+      "responses": [
+        "I can help schedule an appointment. Which date and time work for you?"
+      ],
+      "requiredSlots": ["date", "time", "doctor"],
+      "slotPrompts": {
+        "date": {
+          "prompt": "Please provide the appointment date (YYYY-MM-DD).",
+          "validation": {
+            "regex": "^\\d{4}-\\d{2}-\\d{2}$",
+            "errorMessage": "Date must be in YYYY-MM-DD format."
+          }
+        },
+        "time": {
+          "prompt": "Please provide the appointment time (HH:MM, 24-hour format).",
+          "validation": {
+            "regex": "^([01]\\d|2[0-3]):([0-5]\\d)$",
+            "errorMessage": "Time must be in HH:MM 24-hour format."
+          }
+        },
+        "doctor": {
+          "prompt": "Which doctor would you like to see?",
+          "validation": {
+            "minLength": 2,
+            "maxLength": 50,
+            "errorMessage": "Please provide the doctor's name."
+          }
+        }
+      },
+      "actions": ["bookAppointment"],
+      "followUps": [
+        { "label": "Cancel", "intent": "cancel_appointment" }
+      ],
+      "context": "appointment"
+    },
+
+    "medication_reminder": {
+      "responses": [
+        "I can set a medication reminder. What's the medication name and schedule?"
+      ],
+      "requiredSlots": ["med_name", "dose", "frequency"],
+      "slotPrompts": {
+        "med_name": {
+          "prompt": "Medication name?",
+          "validation": {
+            "minLength": 2,
+            "maxLength": 50,
+            "errorMessage": "Medication name should be between 2 and 50 characters."
+          }
+        },
+        "dose": {
+          "prompt": "Dosage (e.g., 2 pills)?",
+          "validation": {
+            "minLength": 1,
+            "maxLength": 20,
+            "errorMessage": "Please specify a valid dosage."
+          }
+        },
+        "frequency": {
+          "prompt": "Frequency (e.g., once daily)?",
+          "validation": {
+            "minLength": 2,
+            "maxLength": 50,
+            "errorMessage": "Please specify the frequency."
+          }
+        }
+      },
+      "actions": ["setMedicationReminder"],
+      "context": "reminder"
+    },
+
+    "account_balance": {
+      "responses": [
+        "Please provide the last 4 digits of your account or the account nickname so I can find the right account."
+      ],
+      "requiredSlots": ["account_identifier"],
+      "slotPrompts": {
+        "account_identifier": {
+          "prompt": "Enter last 4 digits or account nickname.",
+          "validation": {
+            "regex": "^(\\d{4}|[a-zA-Z0-9_\\-]{3,20})$",
+            "errorMessage": "Please enter exactly 4 digits or a valid nickname (3-20 characters)."
+          }
+        }
+      },
+      "actions": ["fetchAccountBalance"],
+      "context": "account"
+    },
+
+    "transaction_support": {
+      "responses": [
+        "Tell me the transaction ID or describe the issue (e.g., 'failed payment', 'unauthorized charge')."
+      ],
+      "requiredSlots": ["transaction_id_or_desc"],
+      "slotPrompts": {
+        "transaction_id_or_desc": {
+          "prompt": "Transaction ID or issue description?",
+          "validation": {
+            "minLength": 3,
+            "maxLength": 100,
+            "errorMessage": "Please provide a transaction ID or a brief description of the issue."
+          }
+        }
+      },
+      "actions": ["investigateTransaction"],
+      "context": "transaction"
+    },
+
+    "fallback": {
+      "responses": [
+        "Sorry, I didn't catch that. You can try: 'Track my order', 'Product info', 'Contact agent'."
+      ],
+      "suggestedReplies": [
+        { "label": "Track my order", "intent": "order_status" },
+        { "label": "Contact agent", "intent": "contact_agent" }
+      ],
+      "context": "global"
+    },
+
+    "real_estate_inquiry": {
+      "responses": [
+        "What type of property are you interested in? (e.g., apartment, house, commercial)"
+      ],
+      "requiredSlots": ["property_type", "location"],
+      "slotPrompts": {
+        "property_type": {
+          "prompt": "Please specify property type (Apartment / House / Commercial / Land).",
+          "validation": {
+            "allowedValues": ["Apartment", "House", "Commercial", "Land"],
+            "errorMessage": "Choose one: Apartment, House, Commercial, or Land."
+          }
+        },
+        "location": {
+          "prompt": "Which location are you interested in?",
+          "validation": {
+            "minLength": 2,
+            "maxLength": 100,
+            "errorMessage": "Please provide a valid location."
+          }
+        }
+      },
+      "actions": ["searchProperties"],
+      "followUps": [
+        { "label": "Schedule a site visit", "intent": "real_estate_schedule_visit" },
+        { "label": "Contact agent", "intent": "contact_agent" }
+      ],
+      "context": "real_estate"
+    },
+
+    "real_estate_schedule_visit": {
+      "responses": [
+        "Great! When would you like to schedule a site visit?"
+      ],
+      "requiredSlots": ["date", "time", "property_id"],
+      "slotPrompts": {
+        "date": {
+          "prompt": "Please provide the visit date (YYYY-MM-DD).",
+          "validation": {
+            "regex": "^\\d{4}-\\d{2}-\\d{2}$",
+            "errorMessage": "Date must be in YYYY-MM-DD format."
+          }
+        },
+        "time": {
+          "prompt": "Please provide the visit time (HH:MM, 24-hour format).",
+          "validation": {
+            "regex": "^([01]\\d|2[0-3]):([0-5]\\d)$",
+            "errorMessage": "Time must be in HH:MM 24-hour format."
+          }
+        },
+        "property_id": {
+          "prompt": "Enter the property ID for the visit.",
+          "validation": {
+            "regex": "^\\d{3,10}$",
+            "errorMessage": "Property ID should be a number between 3 and 10 digits."
+          }
+        }
+      },
+      "actions": ["bookSiteVisit"],
+      "followUps": [
+        { "label": "Cancel visit", "intent": "cancel_appointment" }
+      ],
+      "context": "real_estate"
+    },
+
+    "manufacturing_product_info": {
+      "responses": [
+        "Please provide the product name or SKU for which you want information."
+      ],
+      "requiredSlots": ["product_query"],
+      "slotPrompts": {
+        "product_query": {
+          "prompt": "Enter product name or SKU.",
+          "validation": {
+            "minLength": 2,
+            "maxLength": 100,
+            "errorMessage": "Please enter a valid product name or SKU."
+          }
+        }
+      },
+      "actions": ["searchManufacturingProducts"],
+      "followUps": [
+        { "label": "Order product", "intent": "manufacturing_order_status" },
+        { "label": "Contact support", "intent": "contact_agent" }
+      ],
+      "context": "manufacturing"
+    },
+
+    "manufacturing_order_status": {
+      "responses": [
+        "Can you provide the manufacturing order ID?"
+      ],
+      "requiredSlots": ["order_id"],
+      "slotPrompts": {
+        "order_id": {
+          "prompt": "Please enter your manufacturing order ID (e.g., MFG12345).",
+          "validation": {
+            "regex": "^MFG\\d{3,10}$",
+            "errorMessage": "Order ID should start with 'MFG' followed by 3-10 digits."
+          }
+        }
+      },
+      "actions": ["fetchManufacturingOrderStatus"],
+      "followUps": [
+        { "label": "Track another order", "intent": "manufacturing_order_status" },
+        { "label": "Contact support", "intent": "contact_agent" }
+      ],
+      "context": "manufacturing"
+    },
+
+    "manufacturing_support_request": {
+      "responses": [
+        "Please describe the issue with your equipment or order."
+      ],
+      "requiredSlots": ["issue_description"],
+      "slotPrompts": {
+        "issue_description": {
+          "prompt": "Describe the issue in a few words.",
+          "validation": {
+            "minLength": 5,
+            "maxLength": 200,
+            "errorMessage": "Please provide a clear description of the issue."
+          }
+        }
+      },
+      "actions": ["submitManufacturingSupportTicket"],
+      "context": "manufacturing"
+    }
+  },
+
+  "templates": {
+    "orderStatusTemplate": "Order {{order_id}} is currently {{status}}. Estimated delivery: {{eta}}.",
+    "balanceTemplate": "Account {{account}} — Available balance: {{balance}}."
+  },
+  "agents": {
+    "sales": {
+      "name": "Sales Team",
+      "phone": "+18005550101",
+      "email": "sales@example.com",
+      "whatsappNumber": "18005550101"
+    },
+    "support": {
+      "name": "Support Team",
+      "phone": "+18005550102",
+      "email": "support@example.com",
+      "whatsappNumber": "18005550102"
+    },
+    "billing": {
+      "name": "Billing Team",
+      "phone": "+18005550103",
+      "email": "billing@example.com",
+      "whatsappNumber": "18005550103"
+    }
+  }
+}

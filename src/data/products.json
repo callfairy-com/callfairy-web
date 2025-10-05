@@ -1,0 +1,329 @@
+{
+    "products": [
+      {
+        "name": "EchoFairy",
+        "description": "AI-powered CRM — smarter leads, better business",
+        "keyFeatures": [
+          {
+            "title": "AI Lead Scoring",
+            "description": "Automatically rank and prioritize leads based on behavior, engagement, and demographic data."
+          },
+          {
+            "title": "Automated Follow-Ups",
+            "description": "Schedule and send personalized follow-up emails or messages without manual intervention."
+          },
+          {
+            "title": "Smart Segmentation",
+            "description": "Dynamically segment leads into groups for targeted marketing campaigns."
+          },
+          {
+            "title": "Unified Lead Capture",
+            "description": "Seamlessly integrate with multiple sales channels to consolidate all leads in one place."
+          },
+          {
+            "title": "Sales Pipeline Management",
+            "description": "Visualize and track leads through every stage of the sales funnel with real-time updates."
+          },
+          {
+            "title": "Customer Engagement Insights",
+            "description": "AI analyzes customer interactions to suggest the best next actions."
+          },
+          {
+            "title": "Collaborative CRM",
+            "description": "Enable teams to share notes, tasks, and lead information to work in sync."
+          }
+        ],
+        "useCases": [
+          {
+            "title": "Sales Teams",
+            "description": "Prioritize hot leads and automate routine follow-ups to boost conversion rates."
+          },
+          {
+            "title": "Marketing Campaigns",
+            "description": "Segment leads for personalized campaigns and track campaign ROI efficiently."
+          },
+          {
+            "title": "Customer Support",
+            "description": "Identify high-value customers and engage proactively with tailored support offers."
+          },
+          {
+            "title": "Small Businesses",
+            "description": "Streamline lead management without the need for large sales teams."
+          },
+          {
+            "title": "B2B Sales",
+            "description": "Manage complex sales cycles with automated reminders and progress tracking."
+          },
+          {
+            "title": "Event Management",
+            "description": "Capture and nurture leads generated from events and webinars automatically."
+          },
+          {
+            "title": "E-commerce",
+            "description": "Track customer behaviors and recommend upsell or cross-sell opportunities in real time."
+          }
+        ],
+        "gettingStarted": [
+          "Create Your Account: Sign up for EchoFairy and access the CRM dashboard.",
+          "Connect Your Sales Channels: Integrate email, website forms, social media, and other lead sources.",
+          "Import Existing Leads: Upload your current leads database to start working immediately.",
+          "Configure AI Settings: Customize lead scoring criteria and engagement triggers according to your sales process.",
+          "Set Up Automated Workflows: Define follow-up schedules, lead assignments, and segmentation rules.",
+          "Monitor and Engage: Use AI insights to prioritize leads, assign tasks, and track progress through the pipeline.",
+          "Optimize Continuously: Analyze reports and feedback to improve your lead nurturing and conversion strategies."
+        ]
+      },
+      {
+        "name": "Migsheet",
+        "description": "AI-powered spreadsheet workflows",
+        "keyFeatures": [
+          {
+            "title": "AI-Powered Automation",
+            "description": "Automatically detect patterns and generate workflows based on spreadsheet data."
+          },
+          {
+            "title": "Smart Workflow Triggers",
+            "description": "Set conditions and events to trigger automated actions such as notifications, updates, or data transformations."
+          },
+          {
+            "title": "Error Reduction",
+            "description": "Intelligent validation and error-checking to minimize manual mistakes in spreadsheets."
+          },
+          {
+            "title": "Seamless Integration",
+            "description": "Connect with popular data sources and tools for smooth data import/export."
+          },
+          {
+            "title": "Customizable Templates",
+            "description": "Use pre-built workflow templates or create your own to fit your business needs."
+          },
+          {
+            "title": "Real-Time Collaboration",
+            "description": "Work simultaneously with team members while keeping data and workflows synchronized."
+          },
+          {
+            "title": "Advanced Data Analytics",
+            "description": "AI-assisted insights to help interpret spreadsheet data and support decision making."
+          }
+        ],
+        "useCases": [
+          {
+            "title": "Financial Reporting",
+            "description": "Automate monthly budget updates and generate real-time financial summaries without manual inputs."
+          },
+          {
+            "title": "Project Management",
+            "description": "Track project progress and trigger notifications when deadlines or milestones are approaching."
+          },
+          {
+            "title": "Sales Pipeline Management",
+            "description": "Automatically update sales leads status and notify team members about priority leads."
+          },
+          {
+            "title": "Inventory Management",
+            "description": "Monitor stock levels and automate reorder alerts to avoid shortages."
+          },
+          {
+            "title": "HR Workflows",
+            "description": "Streamline onboarding checklists, leave approvals, and employee data management."
+          },
+          {
+            "title": "Data Cleaning",
+            "description": "Automatically detect and correct data inconsistencies in large spreadsheets."
+          },
+          {
+            "title": "Marketing Campaigns",
+            "description": "Manage campaign metrics and automate performance reports for rapid insights."
+          }
+        ],
+        "gettingStarted": [
+          "Sign Up and Login: Create your Migsheet account to access the dashboard.",
+          "Create or Upload Spreadsheet: Start by uploading your existing spreadsheets or create new ones directly within the platform.",
+          "Define Workflows: Use the intuitive interface to build workflows—set triggers, actions, and conditions based on your data.",
+          "Set Automation Rules: Specify how and when your workflows should run, such as on data changes or scheduled times.",
+          "Test and Deploy: Run your workflows in test mode to ensure accuracy, then deploy them for full automation.",
+          "Monitor and Optimize: Use built-in analytics and logs to track workflow performance and make improvements as needed."
+        ]
+      },
+      {
+        "name": "Fairybots",
+        "description": "AI bots for customer support (WhatsApp, other channels, web chatbot)",
+        "keyFeatures": [
+          {
+            "title": "Custom Branding",
+            "description": "Customize avatar, colors, logo, and theme to match your brand."
+          },
+          {
+            "title": "Directive & Greeting",
+            "description": "Set instructions for the bot’s behavior and create custom greetings."
+          },
+          {
+            "title": "Knowledge Sources",
+            "description": "Use uploaded files, public webpages, or Migsheet Tables as data sources."
+          },
+          {
+            "title": "Logic & Conversation Controls",
+            "description": "Add triggers, buttons, lead collection, links, and suggested replies."
+          },
+          {
+            "title": "Embedding & Sharing",
+            "description": "Embed on your website, share via link, or connect to messaging apps like WhatsApp."
+          },
+          {
+            "title": "Omnichannel Support",
+            "description": "Use the same chatbot across different platforms (WhatsApp, email, Slack, Messenger)."
+          },
+          {
+            "title": "AI Model Options",
+            "description": "Choose AI models (GPT-3.5, GPT-4) or use your own OpenAI API key."
+          },
+          {
+            "title": "Styling & Appearance",
+            "description": "Adjust chatbot appearance: light/dark mode, icon size/shape, themes."
+          },
+          {
+            "title": "Analytics & Transcripts",
+            "description": "Track conversations and review chat histories."
+          },
+          {
+            "title": "Automation Integration",
+            "description": "Connect with EchoFairy for workflows like lead follow-ups or CRM updates."
+          }
+        ]
+      },
+      {
+        "name": "Fairygentic Agents",
+        "description": "Create AI assistants for any task",
+        "keyFeatures": [
+          {
+            "title": "Natural Language Setup",
+            "description": "Create agents by describing tasks in plain language. Use templates or start from scratch to define agent behaviors."
+          },
+          {
+            "title": "Autonomous Operation",
+            "description": "Agents work independently, executing tasks based on triggers or schedules."
+          },
+          {
+            "title": "Integration with Google Suite and More Apps",
+            "description": "Connect agents to a vast array of applications within the Fairygentic network."
+          },
+          {
+            "title": "Collaboration Between Agents",
+            "description": "Agents can work together to complete complex workflows."
+          },
+          {
+            "title": "User-Friendly Interface",
+            "description": "Manage and monitor agents through a centralized dashboard."
+          },
+          {
+            "title": "Customizable Behaviors",
+            "description": "Define specific behaviors for agents to follow, tailoring them to your business needs."
+          }
+        ],
+        "gettingStarted": [
+          "Access the Platform: Visit agents.callfairy.com to sign up or log in.",
+          "Create an Agent: Click on \"+ New agent\" to start building your first agent.",
+          "Choose Template or Start From Scratch: Select from templates or define custom agent behavior.",
+          "Define Agent Instructions: Provide clear instructions in natural language to specify what the agent should do.",
+          "Connect Apps: Integrate the agent with the apps you use to automate workflows.",
+          "Monitor and Optimize: Use the dashboard to monitor agent performance and make adjustments as needed."
+        ],
+        "useCases": [
+          {
+            "title": "Lead Management",
+            "description": "Automatically qualify and assign leads to the appropriate team members."
+          },
+          {
+            "title": "Customer Support",
+            "description": "Manage and respond to support tickets without manual intervention."
+          },
+          {
+            "title": "Content Creation",
+            "description": "Generate content ideas or drafts based on predefined criteria."
+          },
+          {
+            "title": "Data Management",
+            "description": "Sync and update data across multiple platforms seamlessly."
+          }
+        ]
+      },
+      {
+        "name": "AI Calling Agent",
+        "status": "Coming soon",
+        "description": "AI-powered calling agent that automates outbound and inbound customer calls with natural language understanding.",
+        "whyYouNeedIt": "Automates routine call tasks such as customer support, appointment scheduling, and lead qualification, freeing human agents for complex interactions and improving customer response rates.",
+        "howItIncreasesProductivity": "Handles high volumes of calls simultaneously, reduces wait times, and ensures consistent, personalized communication without human fatigue.",
+        "howToUseIt": "Integrate with your CRM and phone systems, configure call scripts, and let the AI agent manage calls while collecting data and escalating when needed.",
+        "keyFeatures": [
+          {
+            "title": "Natural Language Processing (NLP)",
+            "description": "Understands and responds to customer queries in real time with human-like conversation."
+          },
+          {
+            "title": "Multi-Channel Calling",
+            "description": "Supports voice calls, SMS follow-ups, and voicemail drops."
+          },
+          {
+            "title": "Call Scheduling & Reminders",
+            "description": "Automatically schedule appointments and send reminders."
+          },
+          {
+            "title": "Lead Qualification",
+            "description": "Engage prospects, ask qualifying questions, and update CRM records based on responses."
+          },
+          {
+            "title": "Sentiment Analysis",
+            "description": "Detect customer sentiment and adjust the conversation or escalate to human agents when necessary."
+          },
+          {
+            "title": "Call Recording & Transcription",
+            "description": "Automatically record and transcribe calls for quality control and training."
+          },
+          {
+            "title": "Seamless CRM Integration",
+            "description": "Sync call data, notes, and outcomes directly into your CRM for a unified view."
+          }
+        ],
+        "useCases": [
+          {
+            "title": "Customer Support",
+            "description": "Handle routine inquiries, FAQs, and issue resolution without human intervention."
+          },
+          {
+            "title": "Appointment Scheduling",
+            "description": "Automate booking and confirmations for healthcare, salons, sales demos, and more."
+          },
+          {
+            "title": "Lead Follow-Up",
+            "description": "Automatically call leads after form submissions or events to engage and qualify prospects."
+          },
+          {
+            "title": "Debt Collection",
+            "description": "Manage payment reminders and collection calls with polite, consistent messaging."
+          },
+          {
+            "title": "Surveys & Feedback",
+            "description": "Conduct automated surveys post-purchase or service delivery to gather customer insights."
+          },
+          {
+            "title": "Outbound Marketing",
+            "description": "Run promotional call campaigns with personalized messaging."
+          },
+          {
+            "title": "Emergency Notifications",
+            "description": "Deliver critical alerts quickly to large groups of customers or employees."
+          }
+        ],
+        "gettingStarted": [
+          "Sign Up and Access Dashboard: Create an account and access the AI Calling Agent interface.",
+          "Integrate Phone System & CRM: Connect your telephony system and CRM to sync contacts and call data.",
+          "Upload Call Lists: Import customer or lead lists for automated calling campaigns.",
+          "Create Call Scripts: Build conversation flows using templates or custom scripts tailored to your use case.",
+          "Set Triggers and Scheduling: Define when and how often calls should be made.",
+          "Launch Campaigns: Start the AI calling campaigns and monitor progress through real-time dashboards.",
+          "Review and Optimize: Analyze call recordings, transcripts, and performance metrics to improve scripts and engagement."
+        ]
+      }
+    ]
+  }
+  

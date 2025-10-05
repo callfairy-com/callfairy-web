@@ -1,0 +1,19 @@
+{
+  "site": {
+    "name": "CallFairy",
+    "tagline": "AI-Powered Automation & Customer Experience Platform",
+    "description": "Transform your customer experience with CallFairy's intelligent automation platform. Streamline operations, boost satisfaction, and drive growth with AI-powered solutions.",
+    "url": "https://callfairy.com",
+    "logo": "https://media.licdn.com/dms/image/v2/D4D0BAQHzAzatcvRpPg/company-logo_200_200/B4DZaiMk5JH0AI-/0/1746477928480?e=1761177600&v=beta&t=y9Lc8NE9Q6sqqoAm-Vf19RDpg9TWcLwcUZEHf2T16aw",
+    "favicon": "/favicon.ico"
+  },
+  "contact": {
+    "email": "contact.callfairy@gmail.com",
+    "phone": "+91 9503969692",
+    "address": "2RHM+HQ2, Aashapura Nagar, Dhatrak Phata, Nashik, Maharashtra 422003"
+  },
+  "social": {
+    "linkedin": "https://www.linkedin.com/company/callfairy/about/?viewAsMember=true",
+    "github": "https://github.com/callfairy"
+  }
+}

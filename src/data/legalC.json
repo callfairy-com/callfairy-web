@@ -1,0 +1,18 @@
+{
+  "title": "Cookie Policy",
+  "description": "Information about how CallFairy uses cookies and similar technologies.",
+  "sections": [
+    {
+      "heading": "What Are Cookies",
+      "content": [
+        "Cookies are small text files that websites place on your device to store data about your activity."
+      ]
+    },
+    {
+      "heading": "How We Use Cookies",
+      "content": [
+        "We use cookies for authentication, preferences, performance analytics, and to improve our services."
+      ]
+    }
+  ]
+}

@@ -1,0 +1,161 @@
+{
+  "hero": {
+    "title": "Tailored Solutions for Every Industry",
+    "subtitle": "CallFairy adapts to your unique business needs with industry-specific solutions that drive results.",
+    "image": "https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=800"
+  },
+  "solutions": [
+    {
+      "id": "ecommerce",
+      "title": "E-commerce & Retail",
+      "description": "Enhance your online shopping experience with AI-powered customer support that handles orders, returns, and product inquiries seamlessly.",
+      "icon": "shopping-cart",
+      "image": "https://images.pexels.com/photos/3769747/pexels-photo-3769747.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "features": [
+        "Order tracking and updates",
+        "Return and refund automation",
+        "Product recommendation engine",
+        "Inventory status notifications",
+        "Multi-language support"
+      ],
+      "metrics": {
+        "efficiency": "65% faster order processing",
+        "satisfaction": "40% increase in CSAT",
+        "cost": "50% reduction in support costs"
+      },
+      "caseStudy": {
+        "company": "RetailMax",
+        "result": "Reduced cart abandonment by 30% and increased customer lifetime value by 25%"
+      }
+    },
+    {
+      "id": "healthcare",
+      "title": "Healthcare & Medical",
+      "description": "HIPAA-compliant solutions that streamline patient communications, appointment scheduling, and medical inquiries with the highest security standards.",
+      "icon": "heart",
+      "image": "https://images.pexels.com/photos/4386466/pexels-photo-4386466.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "features": [
+        "HIPAA-compliant communications",
+        "Appointment scheduling automation",
+        "Prescription refill reminders",
+        "Insurance verification support",
+        "Emergency escalation protocols"
+      ],
+      "metrics": {
+        "efficiency": "70% reduction in appointment no-shows",
+        "satisfaction": "85% patient satisfaction rate",
+        "cost": "45% lower administrative costs"
+      },
+      "caseStudy": {
+        "company": "MedCenter Plus",
+        "result": "Improved patient engagement by 60% while maintaining 100% HIPAA compliance"
+      }
+    },
+    {
+      "id": "financial",
+      "title": "Financial Services",
+      "description": "Secure, compliant solutions for banks, credit unions, and fintech companies that handle sensitive financial inquiries and transactions.",
+      "icon": "dollar-sign",
+      "image": "https://images.pexels.com/photos/3760067/pexels-photo-3760067.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "features": [
+        "PCI DSS compliance",
+        "Fraud detection and alerts",
+        "Account balance inquiries",
+        "Transaction history support",
+        "Loan application assistance"
+      ],
+      "metrics": {
+        "efficiency": "80% faster query resolution",
+        "satisfaction": "92% customer satisfaction",
+        "cost": "60% reduction in call center costs"
+      },
+      "caseStudy": {
+        "company": "SecureBank",
+        "result": "Prevented $2M in fraud while improving customer experience scores by 35%"
+      }
+    },
+    {
+      "id": "saas",
+      "title": "SaaS & Technology",
+      "description": "Technical support solutions that help software companies provide instant assistance for complex product questions and troubleshooting.",
+      "icon": "code",
+      "image": "https://images.pexels.com/photos/3861958/pexels-photo-3861958.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "features": [
+        "Technical troubleshooting guides",
+        "API documentation assistance",
+        "Feature usage analytics",
+        "Onboarding automation",
+        "Integration support"
+      ],
+      "metrics": {
+        "efficiency": "75% faster ticket resolution",
+        "satisfaction": "88% developer satisfaction",
+        "cost": "55% lower support costs"
+      },
+      "caseStudy": {
+        "company": "CloudTech Solutions",
+        "result": "Reduced churn by 40% and increased product adoption by 50%"
+      }
+    },
+    {
+      "id": "education",
+      "title": "Education & Training",
+      "description": "Support educational institutions with student services, course information, and administrative assistance that scales with enrollment.",
+      "icon": "book-open",
+      "image": "https://images.pexels.com/photos/3184360/pexels-photo-3184360.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "features": [
+        "Student enrollment support",
+        "Course scheduling assistance",
+        "Grade and transcript inquiries",
+        "Financial aid guidance",
+        "Campus information system"
+      ],
+      "metrics": {
+        "efficiency": "60% faster enrollment process",
+        "satisfaction": "90% student satisfaction",
+        "cost": "40% reduction in admin workload"
+      },
+      "caseStudy": {
+        "company": "State University",
+        "result": "Improved student retention by 25% and streamlined enrollment for 50,000+ students"
+      }
+    },
+    {
+      "id": "travel",
+      "title": "Travel & Hospitality",
+      "description": "Enhance guest experiences with 24/7 support for bookings, reservations, and travel assistance across multiple time zones.",
+      "icon": "plane",
+      "image": "https://images.pexels.com/photos/3184339/pexels-photo-3184339.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "features": [
+        "Booking and reservation management",
+        "Flight status and updates",
+        "Hotel amenity information",
+        "Local recommendations",
+        "Emergency travel assistance"
+      ],
+      "metrics": {
+        "efficiency": "70% faster booking process",
+        "satisfaction": "95% guest satisfaction",
+        "cost": "50% lower service costs"
+      },
+      "caseStudy": {
+        "company": "Global Hotels Group",
+        "result": "Increased direct bookings by 35% and improved guest loyalty scores by 45%"
+      }
+    }
+  ],
+  "customSolution": {
+    "title": "Need a Custom Solution?",
+    "description": "Every business is unique. Our team works with you to create tailored solutions that address your specific challenges and goals.",
+    "features": [
+      "Custom workflow design",
+      "Industry-specific integrations",
+      "Dedicated implementation team",
+      "Ongoing optimization support"
+    ],
+    "cta": {
+      "text": "Discuss Custom Solution",
+      "action": "/contact"
+    }
+  }
+}

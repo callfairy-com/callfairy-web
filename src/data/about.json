@@ -1,0 +1,56 @@
+{
+  "company": {
+    "name": "CallFairy",
+    "tagline": "Smarter Support, Powered by AI",
+    "founded": "2025",
+    "headquarters": "Nashik, Maharashtra, India"
+  },
+  "mission": {
+    "text": "To revolutionize customer support through intelligent, human-centric AI solutions that drive satisfaction, reduce costs, and scale with ease.",
+    "image": "https://images.pexels.com/photos/3184293/pexels-photo-3184293.jpeg?auto=compress&cs=tinysrgb&h=200"
+  },
+  "vision": {
+    "text": "A world where every customer interaction is fast, helpful, and personalized — powered by ethical AI.",
+    "image": "https://images.pexels.com/photos/1103970/pexels-photo-1103970.jpeg?auto=compress&cs=tinysrgb&h=200"
+  },
+  "whatWeDo": {
+    "text": "CallFairy builds AI-powered tools for modern customer support teams — including virtual agents, voice bots, and predictive analytics — to deliver faster resolutions and exceptional customer experiences.",
+    "image": "https://images.pexels.com/photos/1181355/pexels-photo-1181355.jpeg?auto=compress&cs=tinysrgb&h=200"
+  },
+  "values": {
+    "list": [
+      "Customer First",
+      "Transparency and Trust",
+      "Innovation with Purpose",
+      "Bias-Free AI",
+      "Simplicity at Scale"
+    ],
+    "image": "https://images.pexels.com/photos/3182763/pexels-photo-3182763.jpeg?auto=compress&cs=tinysrgb&h=200"
+  },
+  "team": [
+    {
+      "name": "Prathmesh Churhe",
+      "title": "Co-founder & Sr. AI Engineer",
+      "bio": "Prathmesh leads CallFairy with a vision to make AI accessible and human-first. With over a decade in machine learning and enterprise software, he is passionate about ethical AI and customer-first design.",
+      "avatar": "https://media.licdn.com/dms/image/v2/D4D0BAQHzAzatcvRpPg/company-logo_200_200/B4DZaiMk5JH0AI-/0/1746477928480?e=1761177600&v=beta&t=y9Lc8NE9Q6sqqoAm-Vf19RDpg9TWcLwcUZEHf2T16aw"
+    },
+    {
+      "name": "Parikshit Jadhav",
+      "title": "Co-founder & Sr. Project Manager",
+      "bio": "Parikshit oversees daily operations and customer success initiatives. Her background in operations and strategic planning ensures that CallFairy scales smoothly and delivers on its promises.",
+      "avatar": 	"https://media.licdn.com/dms/image/v2/D4D03AQEKuSlmlS8_VQ/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1683116010213?e=1761177600&v=beta&t=aQdLd6-qP0xBOlKtQtmLjAQvE4VaQndboB-yEFWVt44"
+    },
+    {
+      "name": "Siddhant Pawar",
+      "title": "Co-founder & lead Developer",
+      "bio": "Siddhant brings over 3 years of experience in CX strategy, helping companies implement service frameworks that foster long-term loyalty.",
+      "avatar": "https://media.licdn.com/dms/image/v2/D4D0BAQHzAzatcvRpPg/company-logo_200_200/B4DZaiMk5JH0AI-/0/1746477928480?e=1761177600&v=beta&t=y9Lc8NE9Q6sqqoAm-Vf19RDpg9TWcLwcUZEHf2T16aw"
+    }
+  ],
+  "stats": {
+    "customersServed": 120,
+    "aiInteractionsPerMonth": 2000,
+    "countries": 1,
+    "teamSize": 10
+  }
+}

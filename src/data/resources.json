@@ -1,0 +1,83 @@
+{
+  "resources": [
+    {
+      "icon": "BookOpen",
+      "title": "Knowledge Base",
+      "description": "Comprehensive guides and documentation to help you get the most out of CallFairy.",
+      "items": [
+        "Setup Guides",
+        "Best Practices",
+        "Troubleshooting",
+        "API Documentation"
+      ],
+      "cta": "Browse Articles",
+      "color": "blue"
+    },
+    {
+      "icon": "Calculator",
+      "title": "ROI Calculator",
+      "description": "Calculate potential savings and return on investment with CallFairy automation.",
+      "items": [
+        "Cost Savings Analysis",
+        "Efficiency Metrics",
+        "Custom Scenarios",
+        "Detailed Reports"
+      ],
+      "cta": "Calculate ROI",
+      "color": "green"
+    },
+    {
+      "icon": "Video",
+      "title": "Video Tutorials",
+      "description": "Step-by-step video guides for setting up and optimizing your AI workflows.",
+      "items": [
+        "Getting Started",
+        "Advanced Features",
+        "Integration Guides",
+        "Use Case Examples"
+      ],
+      "cta": "Watch Videos",
+      "color": "purple"
+    },
+    {
+      "icon": "FileText",
+      "title": "Case Studies",
+      "description": "Real-world success stories from businesses using CallFairy to transform operations.",
+      "items": [
+        "Industry Examples",
+        "ROI Results",
+        "Implementation Stories",
+        "Best Practices"
+      ],
+      "cta": "Read Stories",
+      "color": "orange"
+    },
+    {
+      "icon": "Users",
+      "title": "Webinars",
+      "description": "Live and recorded sessions covering AI automation trends and CallFairy features.",
+      "items": [
+        "Product Demos",
+        "Industry Insights",
+        "Expert Panels",
+        "Q&A Sessions"
+      ],
+      "cta": "Join Webinar",
+      "color": "indigo"
+    },
+    {
+      "icon": "Lightbulb",
+      "title": "Use Case Library",
+      "description": "Explore hundreds of automation scenarios organized by industry and function.",
+      "items": [
+        "Industry Templates",
+        "Workflow Examples",
+        "Integration Patterns",
+        "Success Metrics"
+      ],
+      "cta": "Explore Cases",
+      "color": "red"
+    }
+  ]
+ 
+}

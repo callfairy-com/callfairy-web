@@ -1,0 +1,9 @@
+Create a chatbot widget with a floating icon that, when clicked, opens a chat window on the webpage. The chat interface should allow users to:
+
+Add or configure bot chat settings using a JSON input.
+
+Interact with the chatbot through a dynamic chat UI.
+
+Select communication channels (e.g., WhatsApp, Email, Messenger) from within the chat interface.
+
+The selected channel should route the conversation through that platform (or simulate the experience in the UI). The floating icon should remain fixed in the bottom-right corner of the page. The bot should support channel-specific behavior (e.g., email format validation for Email, or phone number for WhatsApp). in tsx file and create chat json for predef chat with users

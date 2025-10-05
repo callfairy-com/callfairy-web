@@ -1,0 +1,200 @@
+/* Floating chat button */
+.chat-floating-icon {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  background: linear-gradient(135deg, #5c5b63, #3b82f6);
+  color: white;
+  padding: 16px;
+  border-radius: 50%;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  font-size: 22px;
+  z-index: 1000;
+  transition: transform 0.2s ease;
+}
+
+.chat-floating-icon:hover {
+  transform: scale(1.1);
+}
+
+/* Chat container */
+.chat-widget {
+  position: fixed;
+  bottom: 90px;
+  right: 24px;
+  width: 360px;
+  max-height: 600px;
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  z-index: 1001;
+  animation: fadeInUp 0.3s ease-in-out;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Header */
+.chat-widget .chat-header {
+  background: linear-gradient(135deg, #4f46e5, #3b82f6);
+  color: white;
+  padding: 16px;
+  font-size: 18px;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Close button */
+.chat-widget .close-btn {
+  background: transparent;
+  color: white;
+  font-size: 18px;
+  padding: 0 8px;
+  border: none;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.chat-widget .close-btn:hover {
+  color: #fee2e2;
+}
+
+/* Body */
+.chat-widget .chat-body {
+  padding: 16px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  background-color: #f9fafb;
+}
+
+/* Chat messages */
+.chat-widget .chat-history {
+  flex: 1;
+  overflow-y: auto;
+  margin-bottom: 12px;
+  max-height: 320px;
+  padding-right: 6px;
+  scroll-behavior: smooth;
+}
+
+/* Optional: Custom scrollbars */
+.chat-widget .chat-history::-webkit-scrollbar {
+  width: 6px;
+}
+
+.chat-widget .chat-history::-webkit-scrollbar-thumb {
+  background-color: #cbd5e1;
+  border-radius: 4px;
+}
+
+.chat-widget .chat-message {
+  background-color: #e5e7eb;
+  color: #111827;
+  padding: 10px 14px;
+  border-radius: 12px;
+  margin-bottom: 8px;
+  max-width: 80%;
+  line-height: 1.4;
+}
+
+.chat-widget .chat-message.user {
+  background-color: #4f46e5;
+  color: white;
+  margin-left: auto;
+}
+
+/* Channel selector */
+.chat-widget .channel-selector {
+  margin-bottom: 10px;
+}
+
+.chat-widget .channel-selector label {
+  font-weight: 500;
+  margin-bottom: 6px;
+  display: block;
+}
+
+/* Scoped select */
+.chat-widget select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  font-size: 14px;
+  background-color: #fff;
+  color: #111827;
+  margin-bottom: 12px;
+}
+
+/* Scoped input field */
+.chat-widget input[type="text"] {
+  width: 100%;
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: 1px solid #d1d5db;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+/* Scoped: Unified button styles (only inside chat widget) */
+.chat-widget button,
+.chat-widget .chat-btn {
+  width: 100%;
+  padding: 10px 14px;
+  background: linear-gradient(135deg, #4f46e5, #3b82f6);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.1s ease-in-out;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Hover effect (scoped) */
+.chat-widget button:hover,
+.chat-widget .chat-btn:hover {
+  background: linear-gradient(135deg, #4338ca, #2563eb);
+  transform: scale(1.02);
+}
+
+/* Focus state for accessibility (scoped) */
+.chat-widget button:focus,
+.chat-widget .chat-btn:focus {
+  outline: 2px solid #3b82f6;
+  outline-offset: 2px;
+}
+
+/* Disabled button (scoped) */
+.chat-widget button:disabled,
+.chat-widget .chat-btn:disabled {
+  background: #9ca3af;
+  cursor: not-allowed;
+  opacity: 0.6;
+  transform: none;
+}
+
+/* Optional: Icon support inside buttons (scoped) */
+.chat-widget .chat-btn svg {
+  margin-right: 8px;
+  height: 16px;
+  width: 16px;
+}

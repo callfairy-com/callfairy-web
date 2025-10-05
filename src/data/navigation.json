@@ -1,0 +1,89 @@
+{
+  "mainNav": [
+    {
+      "id": "features",
+      "label": "Features",
+      "path": "/features",
+      "order": 2
+    },
+    {
+      "id": "solutions",
+      "label": "Solutions",
+      "path": "/solutions",
+      "order": 3
+    },
+    {
+      "id": "pricing",
+      "label": "Pricing",
+      "path": "/pricing",
+      "order": 4
+    },
+    {
+      "id": "blog",
+      "label": "Blog",
+      "path": "/blog",
+      "order": 5
+    },
+    {
+      "id": "more",
+      "label": "More",
+      "order": 6,
+      "children": [
+        {
+          "id": "about",
+          "label": "About",
+          "path": "/about"
+        },
+        {
+          "id": "careers",
+          "label": "Careers",
+          "path": "/careers"
+        },
+        {
+          "id": "partners",
+          "label": "Partners",
+          "path": "/partners"
+        }
+      ]
+    }
+  ],
+  "footerNav": [
+    {
+      "title": "Product",
+      "links": [
+        { "label": "Features", "path": "/features" },
+        { "label": "Solutions", "path": "/solutions" },
+        { "label": "Pricing", "path": "/pricing" },
+        { "label": "ROI Calculator", "path": "/roi-calculator" }
+      ]
+    },
+    {
+      "title": "Product",
+      "links": [
+        
+        { "label": "EchoFairy", "path": "/echofairy" },
+        { "label": "Migsheet", "path": "/migsheet" },
+        { "label": "Fairygentic", "path": "/fairygentic" },
+        { "label": "AI Calling Agent", "path": "/ai-calling-agent" },
+        { "label": "Fairybots", "path": "/fairybots" }
+      ]
+    },
+    {
+      "title": "Explore More",
+      "links": [
+        { "label": "Resources", "path": "/resources" },
+        { "label": "Blog", "path": "/blog" },
+        { "label": "Case Studies", "path": "/case-studies" }
+      ]
+    },
+    {
+      "title": "Company",
+      "links": [
+        { "label": "About Us", "path": "/about" },
+        { "label": "Careers", "path": "/careers" },
+        { "label": "Contact", "path": "/contact" },
+        { "label": "Partners", "path": "/partners" }
+      ]
+    }
+  ]
+}

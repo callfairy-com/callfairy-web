@@ -1,0 +1,974 @@
+=== Start of about.json ===
+{
+  "company": {
+    "name": "CallFairy",
+    "tagline": "Smarter Support, Powered by AI",
+    "founded": "2020",
+    "headquarters": "San Francisco, CA",
+    "website": "https://callfairy.com"
+  },
+  "mission": {
+    "text": "To revolutionize customer support through intelligent, human-centric AI solutions that drive satisfaction, reduce costs, and scale with ease.",
+    "image": "https://images.pexels.com/photos/3184293/pexels-photo-3184293.jpeg?auto=compress&cs=tinysrgb&h=200"
+  },
+  "vision": {
+    "text": "A world where every customer interaction is fast, helpful, and personalized — powered by ethical AI.",
+    "image": "https://images.pexels.com/photos/1103970/pexels-photo-1103970.jpeg?auto=compress&cs=tinysrgb&h=200"
+  },
+  "whatWeDo": {
+    "text": "CallFairy builds AI-powered tools for modern customer support teams — including virtual agents, voice bots, and predictive analytics — to deliver faster resolutions and exceptional customer experiences.",
+    "image": "https://images.pexels.com/photos/1181355/pexels-photo-1181355.jpeg?auto=compress&cs=tinysrgb&h=200"
+  },
+  "values": {
+    "list": [
+      "Customer First",
+      "Transparency and Trust",
+      "Innovation with Purpose",
+      "Bias-Free AI",
+      "Simplicity at Scale"
+    ],
+    "image": "https://images.pexels.com/photos/3182763/pexels-photo-3182763.jpeg?auto=compress&cs=tinysrgb&h=200"
+  },
+  "team": [
+    {
+      "name": "Alex Thompson",
+      "title": "Co-founder & CEO",
+      "bio": "Alex leads CallFairy with a vision to make AI accessible and human-first. With over a decade in machine learning and enterprise software, he is passionate about ethical AI and customer-first design.",
+      "avatar": "https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=150&h=150&fit=crop"
+    },
+    {
+      "name": "Maria Garcia",
+      "title": "COO",
+      "bio": "Maria oversees daily operations and customer success initiatives. Her background in operations and strategic planning ensures that CallFairy scales smoothly and delivers on its promises.",
+      "avatar": "https://images.pexels.com/photos/762020/pexels-photo-762020.jpeg?auto=compress&cs=tinysrgb&w=150&h=150&fit=crop"
+    },
+    {
+      "name": "David Kim",
+      "title": "Director of Customer Experience",
+      "bio": "David brings over 15 years of experience in CX strategy, helping companies implement service frameworks that foster long-term loyalty.",
+      "avatar": "https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg?auto=compress&cs=tinysrgb&w=150&h=150&fit=crop"
+    }
+  ],
+  "stats": {
+    "customersServed": 1200000,
+    "aiInteractionsPerMonth": 850000,
+    "countries": 35,
+    "teamSize": 48
+  }
+}
+
+=== End of about.json ===
+
+=== Start of blog.json ===
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "The Future of AI-Powered Customer Service",
+      "slug": "future-ai-customer-service",
+      "excerpt": "Explore how artificial intelligence is revolutionizing customer service experiences and driving business growth.",
+      "content": "Artificial intelligence is no longer just a buzzword — it's rapidly reshaping the future of customer service across industries. Companies that once relied solely on human agents are now integrating advanced AI technologies to provide faster, smarter, and more personalized customer experiences. From 24/7 virtual assistants to predictive support powered by machine learning, the AI revolution is well underway.\n\n### 1. AI in Customer Service: Where We Are Today\n- Chatbots and Virtual Assistants: AI-powered bots handle thousands of inquiries per day.\n- NLP: Natural language processing helps systems understand and respond more naturally.\n- Sentiment Analysis: Detecting emotion in real-time for better service prioritization.\n- Automated Ticket Routing: Routing issues to the right departments with minimal delay.\n\n### 2. Key Benefits\n- 24/7 Support\n- Efficiency Boost\n- Personalization\n- Cost Savings\n\n### 3. Real-World Applications\nE-commerce, banking, telecom, and healthcare are already reaping the benefits.\n\n### 4. Challenges\n- Data Privacy\n- Bias in Algorithms\n- Over-reliance on Automation\n- Job Transition\n\n### 5. The Road Ahead\nAI will become more emotionally intelligent, omnichannel, proactive, and voice-first.\n\n### Conclusion\nBusinesses that merge AI innovation with human empathy will lead the next era of customer experience.",
+      "author": {
+        "name": "Alex Thompson",
+        "avatar": "https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=150&h=150&fit=crop",
+        "bio": "AI Research Lead at CallFairy"
+      },
+      "publishDate": "2024-01-15",
+      "readTime": "8 min read",
+      "category": "AI & Technology",
+      "tags": ["AI", "Customer Service", "Automation"],
+      "featuredImage": "https://images.pexels.com/photos/3861969/pexels-photo-3861969.jpeg?auto=compress&cs=tinysrgb&w=800",
+      "featured": true
+    },
+    {
+      "id": 2,
+      "title": "5 Ways to Reduce Customer Service Costs with Automation",
+      "slug": "reduce-costs-automation",
+      "excerpt": "Learn practical strategies to cut operational costs while improving service quality through intelligent automation.",
+      "content": "Reducing customer service costs doesn’t mean sacrificing quality — in fact, with the right automation strategy, businesses can enhance efficiency and customer satisfaction simultaneously.\n\n### 1. Automate Repetitive Inquiries\nUse chatbots and knowledge bases to handle FAQs. A large percentage of queries can be resolved without human intervention.\n\n### 2. Implement Self-Service Portals\nGive customers tools to help themselves — order tracking, troubleshooting, or knowledge articles can significantly cut ticket volume.\n\n### 3. Use AI to Triage and Route Tickets\nAI can categorize and assign tickets to the right department or agent based on priority, sentiment, or type, ensuring faster resolution and optimized resource use.\n\n### 4. Integrate Automation with CRM and Helpdesk\nSeamless integration avoids duplication, saves time, and provides a complete view of the customer’s journey.\n\n### 5. Monitor and Optimize\nMeasure automation performance (deflection rate, resolution time, CSAT) and continue to improve based on customer behavior and feedback.\n\n### Bonus Tip: Start Small, Scale Smart\nBegin with a pilot project — like automating returns or password resets — then expand based on data.\n\n### Conclusion\nWhen deployed wisely, automation is not just a cost-saving tool but a customer experience enhancer. Businesses can do more with less — and better.",
+      "author": {
+        "name": "Maria Garcia",
+        "avatar": "https://images.pexels.com/photos/762020/pexels-photo-762020.jpeg?auto=compress&cs=tinysrgb&w=150&h=150&fit=crop",
+        "bio": "Operations Specialist"
+      },
+      "publishDate": "2024-01-12",
+      "readTime": "6 min read",
+      "category": "Business Strategy",
+      "tags": ["Cost Reduction", "Automation", "ROI"],
+      "featuredImage": "https://images.pexels.com/photos/3184287/pexels-photo-3184287.jpeg?auto=compress&cs=tinysrgb&w=800",
+      "featured": false
+    },
+    {
+      "id": 3,
+      "title": "Building Customer Trust Through Transparent AI",
+      "slug": "customer-trust-transparent-ai",
+      "excerpt": "Discover how transparency in AI processes builds stronger customer relationships and brand loyalty.",
+      "content": "Trust is the cornerstone of every customer relationship — and in an age where AI plays a growing role in decision-making, transparency is critical.\n\n### 1. Why Transparency in AI Matters\nCustomers are more likely to trust systems they understand. When AI decisions are opaque, it can lead to confusion, dissatisfaction, and loss of brand loyalty.\n\n### 2. How to Make AI Transparent\n- Explainable AI (XAI): Make AI decisions interpretable for both users and support agents.\n- Disclose AI Use: Let customers know when they’re interacting with bots vs. humans.\n- Data Usage Transparency: Clearly state what data is collected, why, and how it’s used.\n- Feedback Loops: Allow customers to contest or correct AI-driven decisions.\n\n### 3. Benefits of Transparent AI\n- Strengthens loyalty\n- Reduces confusion and frustration\n- Increases customer confidence in digital services\n\n### 4. Real-World Example\nA telecom company improved CSAT by 18% after implementing a dashboard explaining how AI handled billing disputes — giving customers visibility and recourse.\n\n### 5. Best Practices\n- Use ethical AI design\n- Provide training for support teams\n- Build accountability into your AI tools\n\n### Conclusion\nTransparency in AI is not just a technical challenge — it’s a trust-building opportunity. Brands that embrace open and honest AI systems will foster deeper relationships with their customers.",
+      "author": {
+        "name": "David Kim",
+        "avatar": "https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg?auto=compress&cs=tinysrgb&w=150&h=150&fit=crop",
+        "bio": "Customer Experience Director"
+      },
+      "publishDate": "2024-01-10",
+      "readTime": "7 min read",
+      "category": "Customer Experience",
+      "tags": ["Trust", "AI Ethics", "Customer Relations"],
+      "featuredImage": "https://images.pexels.com/photos/3184298/pexels-photo-3184298.jpeg?auto=compress&cs=tinysrgb&w=800",
+      "featured": false
+    },
+  {
+    "id": 4,
+    "title": "Self-Service & Automation: Empowering Customers While Reducing Load",
+    "slug": "self-service-customer-automation",
+    "excerpt": "Smart self-service tools reduce ticket volume and empower customers to solve problems instantly — no agent needed.",
+    "content": "Modern customers don’t always want to talk to a human — especially for simple issues. They want instant answers, intuitive tools, and self-service options that work.\n\n### Why Self-Service Matters\n- Customers prefer speed over conversation\n- Reduces support team load\n- Available 24/7, even during off hours\n\n### Effective Tools\n- AI-driven FAQs and knowledge bases\n- Guided workflows and decision trees\n- Account portals with DIY features\n\n### Automation Use Cases\n- Refund processing\n- Password resets\n- Subscription upgrades\n\n### Measuring Success\nTrack deflection rate, customer satisfaction, and average resolution time.\n\n### Conclusion\nEmpowerment is key. Done right, self-service improves satisfaction and lowers cost — a win-win for everyone.",
+    "author": {
+      "name": "Victor Ramirez",
+      "avatar": "https://images.pexels.com/photos/2379005/pexels-photo-2379005.jpeg?auto=compress&cs=tinysrgb&w=150&h=150&fit=crop",
+      "bio": "Head of Support Automation at HelpFlow"
+    },
+    "publishDate": "2023-12-28",
+    "readTime": "6 min read",
+    "category": "Business Strategy",
+    "tags": ["Self-Service", "Automation", "Customer Support"],
+    "featuredImage": "https://images.pexels.com/photos/3184288/pexels-photo-3184288.jpeg?auto=compress&cs=tinysrgb&w=800",
+    "featured": false
+  }
+  ],
+  "categories": [
+    "AI & Technology",
+    "Business Strategy",
+    "Customer Experience",
+    "Industry Insights",
+    "Product Updates"
+  ]
+}
+
+=== End of blog.json ===
+
+=== Start of careers.json ===
+{
+  "jobs": [
+    {
+      "id": 1,
+      "title": "Senior AI Engineer",
+      "location": "San Francisco, CA",
+      "type": "Full-time",
+      "department": "Engineering",
+      "description": "We are looking for a Senior AI Engineer to join our R&D team. You'll lead initiatives in machine learning, NLP, and model deployment for customer-facing products.",
+      "responsibilities": [
+        "Design, develop, and deploy AI/ML models",
+        "Work with NLP technologies to enhance customer support tools",
+        "Collaborate with product and design teams to deliver AI-powered features"
+      ],
+      "requirements": [
+        "5+ years in machine learning or AI",
+        "Strong Python and TensorFlow/PyTorch experience",
+        "Familiarity with cloud services (AWS/GCP)"
+      ],
+      "postedDate": "2024-12-10",
+      "applyLink": "https://company.com/careers/senior-ai-engineer"
+    },
+    {
+      "id": 2,
+      "title": "Customer Success Manager",
+      "location": "Remote",
+      "type": "Full-time",
+      "department": "Customer Experience",
+      "description": "As a Customer Success Manager, you’ll ensure our clients succeed with our AI-driven support tools. Help customers onboard, train, and optimize their service experience.",
+      "responsibilities": [
+        "Manage onboarding for new clients",
+        "Serve as a primary point of contact",
+        "Identify upsell opportunities and improve retention"
+      ],
+      "requirements": [
+        "3+ years in a customer-facing SaaS role",
+        "Strong communication and project management skills",
+        "Experience in AI or tech support is a plus"
+      ],
+      "postedDate": "2024-12-15",
+      "applyLink": "https://forms.gle/CUCygwLGMEGSMUoh9"
+    },
+    {
+      "id": 3,
+      "title": "Content Marketing Specialist",
+      "location": "New York, NY",
+      "type": "Part-time",
+      "department": "Marketing",
+      "description": "Join our marketing team to create engaging blog posts, whitepapers, and social content about AI and customer support innovation.",
+      "responsibilities": [
+        "Write and edit blog posts, newsletters, and web copy",
+        "Collaborate with designers and product marketers",
+        "Use SEO tools to optimize content"
+      ],
+      "requirements": [
+        "2+ years in content marketing or journalism",
+        "Understanding of B2B SaaS and/or AI is preferred",
+        "Strong grammar and storytelling skills"
+      ],
+      "postedDate": "2025-01-02",
+      "applyLink": "https://forms.gle/CUCygwLGMEGSMUoh9"
+    }
+  ]
+}
+
+=== End of careers.json ===
+
+=== Start of contact.json ===
+{
+  "form": {
+    "title": "Get in Touch",
+    "subtitle": "Ready to transform your customer experience? Let's discuss how CallFairy can help your business grow.",
+    "fields": [
+      {
+        "name": "firstName",
+        "label": "First Name",
+        "type": "text",
+        "required": true,
+        "placeholder": "Enter your first name"
+      },
+      {
+        "name": "lastName", 
+        "label": "Last Name",
+        "type": "text",
+        "required": true,
+        "placeholder": "Enter your last name"
+      },
+      {
+        "name": "email",
+        "label": "Email Address",
+        "type": "email", 
+        "required": true,
+        "placeholder": "Enter your email address"
+      },
+      {
+        "name": "company",
+        "label": "Company",
+        "type": "text",
+        "required": false,
+        "placeholder": "Enter your company name"
+      },
+      {
+        "name": "phone",
+        "label": "Phone Number",
+        "type": "tel",
+        "required": false,
+        "placeholder": "Enter your phone number"
+      },
+      {
+        "name": "subject",
+        "label": "Subject",
+        "type": "select",
+        "required": true,
+        "options": [
+          "General Inquiry",
+          "Sales Question",
+          "Technical Support",
+          "Partnership Opportunity",
+          "Media Inquiry"
+        ]
+      },
+      {
+        "name": "message",
+        "label": "Message",
+        "type": "textarea",
+        "required": true,
+        "placeholder": "Tell us how we can help you..."
+      }
+    ],
+    "submitText": "Send Message"
+  },
+  "contactInfo": {
+    "title": "Contact Information",
+    "email": "hello@callfairy.com",
+    "phone": "+1 (555) 123-4567",
+    "address": "123 Innovation Drive\nTech Valley, CA 94043",
+    "hours": "Monday - Friday: 9:00 AM - 6:00 PM PST"
+  }
+}
+=== End of contact.json ===
+
+=== Start of features.json ===
+{
+  "hero": {
+    "title": "Powerful Features That Transform Customer Experience",
+    "subtitle": "Discover how CallFairy's comprehensive suite of AI-powered tools revolutionizes the way you interact with customers.",
+    "image": "https://images.pexels.com/photos/3861969/pexels-photo-3861969.jpeg?auto=compress&cs=tinysrgb&w=800"
+  },
+  "features": [
+    {
+      "id": "ai-routing",
+      "title": "Intelligent Call Routing",
+      "description": "Advanced AI algorithms analyze customer intent and route calls to the most qualified agents, reducing wait times by up to 75%.",
+      "icon": "phone",
+      "image": "https://images.pexels.com/photos/3184435/pexels-photo-3184435.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "benefits": [
+        "Reduced wait times by 75%",
+        "Higher first-call resolution rates",
+        "Improved customer satisfaction scores",
+        "Optimized agent workload distribution"
+      ],
+      "category": "automation"
+    },
+    {
+      "id": "nlp-responses",
+      "title": "Natural Language Processing",
+      "description": "Our advanced NLP engine understands customer queries in natural language and provides accurate, contextual responses instantly.",
+      "icon": "message-circle",
+      "image": "https://images.pexels.com/photos/3184298/pexels-photo-3184298.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "benefits": [
+        "90% accuracy in intent recognition",
+        "Support for 50+ languages",
+        "Contextual conversation memory",
+        "Continuous learning and improvement"
+      ],
+      "category": "ai"
+    },
+    {
+      "id": "real-time-analytics",
+      "title": "Real-Time Analytics Dashboard",
+      "description": "Comprehensive analytics provide actionable insights into customer behavior, agent performance, and operational efficiency.",
+      "icon": "bar-chart",
+      "image": "https://images.pexels.com/photos/3184296/pexels-photo-3184296.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "benefits": [
+        "Real-time performance monitoring",
+        "Predictive analytics capabilities",
+        "Custom reporting and dashboards",
+        "Data-driven decision making"
+      ],
+      "category": "analytics"
+    },
+    {
+      "id": "omnichannel",
+      "title": "Omnichannel Integration",
+      "description": "Seamlessly connect all customer touchpoints including phone, email, chat, social media, and messaging platforms.",
+      "icon": "zap",
+      "image": "https://images.pexels.com/photos/3184287/pexels-photo-3184287.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "benefits": [
+        "Unified customer view across channels",
+        "Consistent experience everywhere",
+        "Easy integration with existing tools",
+        "Centralized conversation history"
+      ],
+      "category": "integration"
+    },
+    {
+      "id": "sentiment-analysis",
+      "title": "Sentiment Analysis",
+      "description": "AI-powered sentiment analysis monitors customer emotions in real-time, enabling proactive intervention and personalized responses.",
+      "icon": "heart",
+      "image": "https://images.pexels.com/photos/3184302/pexels-photo-3184302.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "benefits": [
+        "Real-time emotion detection",
+        "Proactive escalation alerts",
+        "Personalized response suggestions",
+        "Customer satisfaction prediction"
+      ],
+      "category": "ai"
+    },
+
+  ],
+  "categories": [
+    {
+      "id": "all",
+      "name": "All Features",
+      "description": "Complete overview of CallFairy's capabilities"
+    },
+    {
+      "id": "ai",
+      "name": "AI & Machine Learning",
+      "description": "Advanced AI-powered features"
+    },
+    {
+      "id": "automation",
+      "name": "Automation",
+      "description": "Workflow and process automation"
+    },
+    {
+      "id": "analytics",
+      "name": "Analytics & Insights",
+      "description": "Data analysis and reporting tools"
+    },
+    {
+      "id": "integration",
+      "name": "Integrations",
+      "description": "Connect with your existing tools"
+    }
+  ],
+  "cta": {
+    "title": "Ready to Experience These Features?",
+    "subtitle": "Start your free trial today and see how CallFairy can transform your customer experience.",
+    "primaryButton": {
+      "text": "Start Free Trial",
+      "action": "/signup"
+    },
+    "secondaryButton": {
+      "text": "Schedule Demo",
+      "action": "/demo"
+    }
+  }
+}
+=== End of features.json ===
+
+=== Start of homepage.json ===
+{
+  "hero": {
+    "title": "Transform Customer Experience with AI-Powered Automation",
+    "subtitle": "Streamline your operations, boost customer satisfaction, and drive growth with CallFairy's intelligent automation platform.",
+    "cta": {
+      "primary": {
+        "text": "Start Free Trial",
+        "action": "/signup"
+      },
+      "secondary": {
+        "text": "View Demo",
+        "action": "/demo"
+      }
+    },
+    "heroImage": "https://images.pexels.com/photos/3861969/pexels-photo-3861969.jpeg?auto=compress&cs=tinysrgb&w=800",
+    "features": [
+      "24/7 AI-powered support",
+      "90% faster response times",
+      "Seamless integrations"
+    ]
+  },
+  "features": {
+    "title": "Intelligent Automation That Works",
+    "subtitle": "Discover how CallFairy's AI platform revolutionizes customer interactions",
+    "items": [
+      {
+        "id": "smart-routing",
+        "title": "Smart Call Routing",
+        "description": "AI-powered intelligent routing ensures customers reach the right agent every time, reducing wait times by up to 75%.",
+        "icon": "phone",
+        "image": "https://images.pexels.com/photos/3184435/pexels-photo-3184435.jpeg?auto=compress&cs=tinysrgb&w=400"
+      },
+      {
+        "id": "automated-responses",
+        "title": "Automated Responses",
+        "description": "Natural language processing handles routine inquiries instantly, freeing your team for complex customer needs.",
+        "icon": "message-circle",
+        "image": "https://images.pexels.com/photos/3184298/pexels-photo-3184298.jpeg?auto=compress&cs=tinysrgb&w=400"
+      },
+      {
+        "id": "analytics-insights",
+        "title": "Analytics & Insights", 
+        "description": "Real-time dashboards provide actionable insights to optimize performance and customer satisfaction metrics.",
+        "icon": "bar-chart",
+        "image": "https://images.pexels.com/photos/3184296/pexels-photo-3184296.jpeg?auto=compress&cs=tinysrgb&w=400"
+      },
+      {
+        "id": "seamless-integration",
+        "title": "Seamless Integration",
+        "description": "Connect with your existing CRM, helpdesk, and communication tools in minutes, not months.",
+        "icon": "zap",
+        "image": "https://images.pexels.com/photos/3184287/pexels-photo-3184287.jpeg?auto=compress&cs=tinysrgb&w=400"
+      }
+    ]
+  },
+  "stats": {
+    "title": "Trusted by Industry Leaders",
+    "items": [
+      {
+        "number": "50+",
+        "label": "Companies Trust Us"
+      },
+      {
+        "number": "2K+",
+        "label": "Customers Served"
+      },
+      {
+        "number": "99.9%",
+        "label": "Uptime Guarantee"
+      },
+      {
+        "number": "45%",
+        "label": "Cost Reduction"
+      }
+    ]
+  },
+  "testimonials": {
+    "title": "What Our Customers Say",
+    "items": [
+      {
+        "id": 1,
+        "quote": "CallFairy transformed our customer service. Response times dropped by 80% and satisfaction scores increased by 35%.",
+        "author": "Sarah Chen",
+        "title": "Head of Customer Success",
+        "company": "TechFlow Inc",
+        "avatar": "https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=150&h=150&fit=crop"
+      },
+      {
+        "id": 2,
+        "quote": "The AI-powered routing is incredible. Our customers get connected to the right expert immediately.",
+        "author": "Michael Rodriguez",
+        "title": "Operations Director", 
+        "company": "Global Services Ltd",
+        "avatar": "https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=150&h=150&fit=crop"
+      },
+      {
+        "id": 3,
+        "quote": "Implementation was seamless. We saw results within the first week of deployment.",
+        "author": "Emily Johnson",
+        "title": "CTO",
+        "company": "InnovateCorp",
+        "avatar": "https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg?auto=compress&cs=tinysrgb&w=150&h=150&fit=crop"
+      }
+    ]
+  }
+}
+=== End of homepage.json ===
+
+=== Start of navigation.json ===
+{
+  "mainNav": [
+    {
+      "id": "home",
+      "label": "Home",
+      "path": "/",
+      "order": 1
+    },
+    {
+      "id": "features",
+      "label": "Features",
+      "path": "/features",
+      "order": 2
+    },
+    {
+      "id": "solutions",
+      "label": "Solutions",
+      "path": "/solutions",
+      "order": 3
+    },
+    {
+      "id": "pricing",
+      "label": "Pricing",
+      "path": "/pricing",
+      "order": 4
+    },
+    {
+      "id": "blog",
+      "label": "Blog",
+      "path": "/blog",
+      "order": 5
+    },
+    {
+      "id": "more",
+      "label": "More",
+      "order": 6,
+      "children": [
+        {
+          "id": "about",
+          "label": "About",
+          "path": "/about"
+        },
+        {
+          "id": "careers",
+          "label": "Careers",
+          "path": "/careers"
+        },
+        {
+          "id": "wishlist",
+          "label": "Wishlist",
+          "path": "/wishlist"
+        },
+        {
+          "id": "partners",
+          "label": "Partners",
+          "path": "/partners"
+        }
+      ]
+    }
+  ],
+  "footerNav": [
+    {
+      "title": "Product",
+      "links": [
+        { "label": "Features", "path": "/features" },
+        { "label": "Solutions", "path": "/solutions" },
+        { "label": "Pricing", "path": "/pricing" },
+        { "label": "ROI Calculator", "path": "/roi-calculator" }
+      ]
+    },
+    {
+      "title": "Resources",
+      "links": [
+        { "label": "Blog", "path": "/blog" },
+        { "label": "Documentation", "path": "/docs" },
+        { "label": "Support", "path": "/support" },
+        { "label": "API Reference", "path": "/api" }
+      ]
+    },
+    {
+      "title": "Company",
+      "links": [
+        { "label": "About Us", "path": "/about" },
+        { "label": "Careers", "path": "/careers" },
+        { "label": "Contact", "path": "/contact" },
+        { "label": "Partners", "path": "/partners" }
+      ]
+    }
+  ]
+}
+
+=== End of navigation.json ===
+
+=== Start of partners.json ===
+{
+  "partners": [
+    {
+      "id": 1,
+      "name": "Zendesk",
+      "logo": "https://cdn.callfairy.com/partners/zendesk-logo.png",
+      "description": "Integration partner for seamless customer service ticketing.",
+      "website": "https://www.zendesk.com"
+    },
+    {
+      "id": 2,
+      "name": "Salesforce",
+      "logo": "https://cdn.callfairy.com/partners/salesforce-logo.png",
+      "description": "CRM partner enabling unified customer data and AI-powered support journeys.",
+      "website": "https://www.salesforce.com"
+    },
+    {
+      "id": 3,
+      "name": "Twilio",
+      "logo": "https://cdn.callfairy.com/partners/twilio-logo.png",
+      "description": "Telephony and messaging backbone powering our voice and SMS automation.",
+      "website": "https://www.twilio.com"
+    },
+
+  ]
+}
+
+=== End of partners.json ===
+
+=== Start of pricing.json ===
+{
+  "plans": [
+    {
+      "id": "starter",
+      "name": "Starter",
+      "price": {
+        "monthly": 49,
+        "yearly": 490
+      },
+      "description": "Perfect for small teams getting started with AI automation",
+      "features": [
+        "Up to 1,000 conversations/month",
+        "Basic AI routing",
+        "Email support",
+        "Standard integrations",
+        "Basic analytics dashboard"
+      ],
+      "limitations": [
+        "Limited customization",
+        "Standard response times"
+      ],
+      "cta": "Start Free Trial",
+      "popular": false
+    },
+    {
+      "id": "professional",
+      "name": "Professional", 
+      "price": {
+        "monthly": 149,
+        "yearly": 1490
+      },
+      "description": "Advanced features for growing businesses",
+      "features": [
+        "Up to 10,000 conversations/month",
+        "Advanced AI routing & responses",
+        "Priority support",
+        "Premium integrations",
+        "Advanced analytics & insights",
+        "Custom workflows",
+        "Team collaboration tools"
+      ],
+      "limitations": [],
+      "cta": "Start Free Trial",
+      "popular": true
+    },
+    {
+      "id": "enterprise",
+      "name": "Enterprise",
+      "price": {
+        "monthly": "Custom",
+        "yearly": "Custom"
+      },
+      "description": "Tailored solutions for large organizations",
+      "features": [
+        "Unlimited conversations",
+        "Custom AI model training",
+        "Dedicated account manager",
+        "White-label options",
+        "Advanced security & compliance",
+        "Custom integrations",
+        "24/7 phone support",
+        "SLA guarantees"
+      ],
+      "limitations": [],
+      "cta": "Contact Sales",
+      "popular": false
+    }
+  ],
+  "faq": [
+    {
+      "question": "Can I change plans anytime?",
+      "answer": "Yes, you can upgrade or downgrade your plan at any time. Changes take effect immediately."
+    },
+    {
+      "question": "Is there a free trial?", 
+      "answer": "All plans come with a 14-day free trial. No credit card required to get started."
+    },
+    {
+      "question": "What payment methods do you accept?",
+      "answer": "We accept all major credit cards, PayPal, and wire transfers for enterprise customers."
+    }
+  ]
+}
+=== End of pricing.json ===
+
+=== Start of siteConfig.json ===
+{
+  "site": {
+    "name": "CallFairy",
+    "tagline": "AI-Powered Automation & Customer Experience Platform",
+    "description": "Transform your customer experience with CallFairy's intelligent automation platform. Streamline operations, boost satisfaction, and drive growth with AI-powered solutions.",
+    "url": "https://callfairy.com",
+    "logo": "https://images.pexels.com/photos/8566473/pexels-photo-8566473.jpeg?auto=compress&cs=tinysrgb&w=100&h=100&fit=crop",
+    "favicon": "/favicon.ico"
+  },
+  "contact": {
+    "email": "hello@callfairy.com",
+    "phone": "+1 (555) 123-4567",
+    "address": "123 Innovation Drive, Tech Valley, CA 94043"
+  },
+  "social": {
+    "twitter": "https://twitter.com/callfairy",
+    "linkedin": "https://linkedin.com/company/callfairy",
+    "github": "https://github.com/callfairy"
+  }
+}
+=== End of siteConfig.json ===
+
+=== Start of solutions.json ===
+{
+  "hero": {
+    "title": "Tailored Solutions for Every Industry",
+    "subtitle": "CallFairy adapts to your unique business needs with industry-specific solutions that drive results.",
+    "image": "https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=800"
+  },
+  "solutions": [
+    {
+      "id": "ecommerce",
+      "title": "E-commerce & Retail",
+      "description": "Enhance your online shopping experience with AI-powered customer support that handles orders, returns, and product inquiries seamlessly.",
+      "icon": "shopping-cart",
+      "image": "https://images.pexels.com/photos/3769747/pexels-photo-3769747.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "features": [
+        "Order tracking and updates",
+        "Return and refund automation",
+        "Product recommendation engine",
+        "Inventory status notifications",
+        "Multi-language support"
+      ],
+      "metrics": {
+        "efficiency": "65% faster order processing",
+        "satisfaction": "40% increase in CSAT",
+        "cost": "50% reduction in support costs"
+      },
+      "caseStudy": {
+        "company": "RetailMax",
+        "result": "Reduced cart abandonment by 30% and increased customer lifetime value by 25%"
+      }
+    },
+    {
+      "id": "healthcare",
+      "title": "Healthcare & Medical",
+      "description": "HIPAA-compliant solutions that streamline patient communications, appointment scheduling, and medical inquiries with the highest security standards.",
+      "icon": "heart",
+      "image": "https://images.pexels.com/photos/4386466/pexels-photo-4386466.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "features": [
+        "HIPAA-compliant communications",
+        "Appointment scheduling automation",
+        "Prescription refill reminders",
+        "Insurance verification support",
+        "Emergency escalation protocols"
+      ],
+      "metrics": {
+        "efficiency": "70% reduction in appointment no-shows",
+        "satisfaction": "85% patient satisfaction rate",
+        "cost": "45% lower administrative costs"
+      },
+      "caseStudy": {
+        "company": "MedCenter Plus",
+        "result": "Improved patient engagement by 60% while maintaining 100% HIPAA compliance"
+      }
+    },
+    {
+      "id": "financial",
+      "title": "Financial Services",
+      "description": "Secure, compliant solutions for banks, credit unions, and fintech companies that handle sensitive financial inquiries and transactions.",
+      "icon": "dollar-sign",
+      "image": "https://images.pexels.com/photos/3760067/pexels-photo-3760067.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "features": [
+        "PCI DSS compliance",
+        "Fraud detection and alerts",
+        "Account balance inquiries",
+        "Transaction history support",
+        "Loan application assistance"
+      ],
+      "metrics": {
+        "efficiency": "80% faster query resolution",
+        "satisfaction": "92% customer satisfaction",
+        "cost": "60% reduction in call center costs"
+      },
+      "caseStudy": {
+        "company": "SecureBank",
+        "result": "Prevented $2M in fraud while improving customer experience scores by 35%"
+      }
+    },
+    {
+      "id": "saas",
+      "title": "SaaS & Technology",
+      "description": "Technical support solutions that help software companies provide instant assistance for complex product questions and troubleshooting.",
+      "icon": "code",
+      "image": "https://images.pexels.com/photos/3861958/pexels-photo-3861958.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "features": [
+        "Technical troubleshooting guides",
+        "API documentation assistance",
+        "Feature usage analytics",
+        "Onboarding automation",
+        "Integration support"
+      ],
+      "metrics": {
+        "efficiency": "75% faster ticket resolution",
+        "satisfaction": "88% developer satisfaction",
+        "cost": "55% lower support costs"
+      },
+      "caseStudy": {
+        "company": "CloudTech Solutions",
+        "result": "Reduced churn by 40% and increased product adoption by 50%"
+      }
+    },
+    {
+      "id": "education",
+      "title": "Education & Training",
+      "description": "Support educational institutions with student services, course information, and administrative assistance that scales with enrollment.",
+      "icon": "book-open",
+      "image": "https://images.pexels.com/photos/3184360/pexels-photo-3184360.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "features": [
+        "Student enrollment support",
+        "Course scheduling assistance",
+        "Grade and transcript inquiries",
+        "Financial aid guidance",
+        "Campus information system"
+      ],
+      "metrics": {
+        "efficiency": "60% faster enrollment process",
+        "satisfaction": "90% student satisfaction",
+        "cost": "40% reduction in admin workload"
+      },
+      "caseStudy": {
+        "company": "State University",
+        "result": "Improved student retention by 25% and streamlined enrollment for 50,000+ students"
+      }
+    },
+    {
+      "id": "travel",
+      "title": "Travel & Hospitality",
+      "description": "Enhance guest experiences with 24/7 support for bookings, reservations, and travel assistance across multiple time zones.",
+      "icon": "plane",
+      "image": "https://images.pexels.com/photos/3184339/pexels-photo-3184339.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "features": [
+        "Booking and reservation management",
+        "Flight status and updates",
+        "Hotel amenity information",
+        "Local recommendations",
+        "Emergency travel assistance"
+      ],
+      "metrics": {
+        "efficiency": "70% faster booking process",
+        "satisfaction": "95% guest satisfaction",
+        "cost": "50% lower service costs"
+      },
+      "caseStudy": {
+        "company": "Global Hotels Group",
+        "result": "Increased direct bookings by 35% and improved guest loyalty scores by 45%"
+      }
+    }
+  ],
+  "customSolution": {
+    "title": "Need a Custom Solution?",
+    "description": "Every business is unique. Our team works with you to create tailored solutions that address your specific challenges and goals.",
+    "features": [
+      "Custom workflow design",
+      "Industry-specific integrations",
+      "Dedicated implementation team",
+      "Ongoing optimization support"
+    ],
+    "cta": {
+      "text": "Discuss Custom Solution",
+      "action": "/contact"
+    }
+  }
+}
+=== End of solutions.json ===
+
+=== Start of userdb.json ===
+[
+  {
+  "name": "John Doe",
+  "email": "john.doe@example.com",
+  "password": "securepassword123",
+  "role": "user"
+  },
+  {
+  "name": "Jane Smith",
+  "email": "john.doe@example.com",
+  "password": "anothersecurepassword456",
+  "role": "admin"
+  },
+  {
+  "name": "sid pawar",
+  "email": "sidpawar@gmail.com",
+  "password": "admin@123",
+  "role": "admin"
+  }
+]
+=== End of userdb.json ===
+
+=== Start of userwishlistdb.json ===
+[
+  {
+    "id": 1234567890,
+    "name": "John Doe",
+    "email": "john.doe@example.com",
+    "feature": "Real-Time Language Translation for Support Teams",
+    "description": "Feature description",
+    "benefit": "Enhances team productivity and customer satisfaction by breaking down language barriers."
+  }
+]
+=== End of userwishlistdb.json ===
+
+=== Start of wishlist.json ===
+{
+  "wishlist": [
+    {
+      "id": 1,
+      "feature": "Real-Time Language Translation for Support Teams",
+      "description": "A feature where agents can seamlessly communicate with customers in their preferred language, using real-time translation powered by AI.",
+      "benefit": "Enhances team productivity and customer satisfaction by breaking down language barriers."
+    },
+    {
+      "id": 2,
+      "feature": "Chatbot Personality Customization",
+      "description": "Allow businesses to personalize the AI chatbot’s tone and voice based on their brand's persona.",
+      "benefit": "Strengthens brand identity and makes interactions feel more personal."
+    },
+  ]
+}
+
+=== End of wishlist.json ===
+

@@ -1,0 +1,293 @@
+{
+  "pricing": {
+    "ai_whatsapp_business_automation": {
+      "plans": [
+        {
+          "name": "Starter",
+          "price": {
+            "monthly": 1299,
+            "yearly": 10990
+          },
+          "billing_cycle": "per account / month",
+          "ideal_for": "Very small businesses testing WhatsApp Ads & API",
+          "features": [
+            "WhatsApp Business API Access (Free)",
+            "AI Calling for 200 mins",
+            "Help with Blue Tick Application",
+            "₹25 Free Conversation Credits",
+            "Unlimited Free Service Conversations (basic)",
+            "Click-to-WhatsApp Ads Manager",
+            "Upload & Manage Contacts",
+            "Create Tags (Up to 5)",
+            "Create Custom Attributes (Up to 3)",
+            "Message Template Creation",
+            "Live Chat Dashboard",
+            "Basic CRM & tool integrations"
+          ],
+          "usage_addons": {
+            "extra_conversation_credit": "₹1 per credit",
+            "extra_ai_calling": "₹0.50 per minute"
+          },
+          "popular": false
+        },
+        {
+          "name": "Growth",
+          "price": {
+            "monthly": 2999,
+            "yearly": 29990
+          },
+          "billing_cycle": "per account / month",
+          "ideal_for": "Small to Mid‑size Teams",
+          "features": [
+            "₹300 Free Conversation Credits",
+            "AI Calling for 600 mins",
+            "Everything in Starter",
+            "1 Owner + 5 Agents included (Extra @ ₹600/month)",
+            "Smart Audience Segmentation",
+            "Broadcasting & Retargeting Tools",
+            "Template Message APIs",
+            "Multi‑Agent Live Chat",
+            "Agent Transfer & Manager Oversight",
+            "Marketplace Integrations",
+            "High-Speed Messaging: Up to 2000 msgs/min",
+            "Shopify & WooCommerce Integrations",
+            "Dialogflow Chatbot Integration",
+            "Shared Team Inbox"
+          ],
+          "message_charges": {
+            "Marketing": "₹0.88",
+            "Utility": "₹0.125",
+            "Authentication": "₹0.125",
+            "Service Conversations": "Unlimited Free"
+          },
+          "usage_addons": {
+            "extra_agents": "₹600 per agent",
+            "extra_conversation_credit": "₹0.9 per credit"
+          },
+          "popular": true
+        },
+        {
+          "name": "Pro",
+          "price": {
+            "monthly": 5499,
+            "yearly": 51990
+          },
+          "billing_cycle": "per account / month",
+          "ideal_for": "Growing enterprises & high‑volume campaigns",
+          "features": [
+            "AI Calling for 1200 mins",
+            "AI Auto Voicemail Drop",
+            "Sentiment Analysis",
+            "Everything in Growth",
+            "Up to 100 Tags",
+            "Up to 20 Custom Attributes",
+            "Campaign Scheduler",
+            "Click Tracking for Campaigns & Carousels",
+            "Smart Agent Routing",
+            "Campaign Budget Insights",
+            "Custom Agent Rules",
+            "CSV Campaign Scheduling",
+            "Role-based User Access Control",
+            "Auto Retry for Failed Messages",
+            "1 Owner + 5 Agents included (Extra @ ₹600/month)",
+            "Chatbot Flows: 10 flows included"
+          ],
+          "message_charges": {
+            "Marketing": "₹0.80",
+            "Utility": "₹0.12",
+            "Authentication": "₹0.12",
+            "Service Conversations": "Unlimited Free"
+          },
+          "usage_addons": {
+            "extra_agents": "₹600 per agent",
+            "extra_conversation_credit": "₹0.8 per credit"
+          },
+          "popular": false
+        },
+        {
+          "name": "Enterprise",
+          "price": {
+            "monthly": "Custom",
+            "yearly": "Custom"
+          },
+          "billing_cycle": "per account / month",
+          "ideal_for": "High‑volume usage (500k+ msgs / mo)",
+          "features": [
+            "Everything in Pro",
+            "Unlimited Tags & Custom Attributes",
+            "Downloadable Reports & Dashboards",
+            "Advanced Webhooks / API Controls",
+            "Dedicated Account Manager",
+            "Priority Support & SLA",
+            "Increased Messaging Speed / Throughput",
+            "White‑label setup option",
+            "Custom Integrations"
+          ],
+          "message_charges": {
+            "Marketing": "Custom",
+            "Utility": "₹0.12",
+            "Authentication": "₹0.12",
+            "Service Conversations": "Unlimited Free"
+          },
+          "usage_addons": {
+            "extra_agents": "Custom"
+          },
+          "popular": false
+        }
+      ]
+    },
+    "ai_business_phone_system": {
+      "plans": [
+        {
+          "name": "Essential (Small Team)",
+          "price": {
+            "monthly": 2499,
+            "yearly": 19990
+          },
+          "billing_cycle": "per user / month",
+          "ideal_for": "Teams with low to moderate call volume",
+          "features": [
+            "Unlimited Calling (India)",
+            "1 Free Phone Number",
+            "WhatsApp Business API Integration",
+            "Basic Call Recording",
+            "CRM & Helpdesk Integrations (Basic)",
+            "User Role Management",
+            "Basic Call Transcription & Analytics",
+            "IVR (Single level)",
+            "Mobile App / Softphone Support",
+            "Call Forwarding / Hold Music"
+          ],
+          "limitations": {
+            "concurrent_calls": 5
+          },
+          "popular": false
+        },
+        {
+          "name": "Pro Suite (Call Center)",
+          "price": {
+            "monthly": 4499,
+            "yearly": 42990
+          },
+          "billing_cycle": "per user / month",
+          "ideal_for": "High call volumes / Contact centers",
+          "features": [
+            "Unlimited Calling (India & Intl)",
+            "Advanced IVR (Multi‑level)",
+            "Multi‑level Call Routing",
+            "Advanced Analytics & AI Insights",
+            "Full Call Transcription & Sentiment Analysis",
+            "AI Call Routing",
+            "Unlimited Call Recording",
+            "Omnichannel Support (WhatsApp, SMS, Email)",
+            "CRM & Helpdesk Deep Integrations",
+            "Role-based Access (Admin, Supervisor, Agent)",
+            "Dedicated Onboarding & Training",
+            "Real-time Dashboards & Reports",
+            "Queue Management, Virtual Hold",
+            "Predictive Dialer",
+            "Speech Analytics & AI Coaching",
+            "API / Webhooks"
+          ],
+          "limitations": {
+            "concurrent_calls": 50
+          },
+          "popular": true
+        }
+      ]
+    },
+    "AI_Chatbot": {
+      "plans": [
+        {
+          "name": "Basic Chatbot",
+          "price": {
+            "monthly": 499,
+            "yearly": 4490
+          },
+          "billing_cycle": "per user / month",
+          "ideal_for": "Solo / Very small teams",
+          "features": [
+            "3 Users Free",
+            "Basic AI Chatbot",
+            "Contact Management",
+            "File Sending",
+            "Multi-Account Support",
+            "Basic Performance Metrics"
+          ],
+          "limitations": {
+            "message_limit": 500
+          },
+          "popular": false
+        },
+        {
+          "name": "Standard Chatbot",
+          "price": {
+            "monthly": 999,
+            "yearly": 8990
+          },
+          "billing_cycle": "per user / month",
+          "ideal_for": "Small teams / customer engagement",
+          "features": [
+            "Everything in Basic +",
+            "Shared Inbox",
+            "Business Hours Routing",
+            "Contact Timeline",
+            "Admin Chat Review",
+            "Analytics & Reports",
+            "API / Webhook Support",
+            "Quick Reply Templates"
+          ],
+          "limitations": {
+            "message_limit": 1000
+          },
+          "popular": true
+        },
+        {
+          "name": "Advanced Chatbot",
+          "price": {
+            "monthly": 1499,
+            "yearly": 12990
+          },
+          "billing_cycle": "per user / month",
+          "ideal_for": "Growing teams / high chat volumes",
+          "features": [
+            "Everything in Standard +",
+            "Full Automation & Workflows",
+            "Broadcast Messages",
+            "AI Chat Assistant",
+            "Unified Inbox",
+            "Data Export",
+            "On-site Chat Button (Widget)",
+            "CSAT Feedback",
+            "Private Notes & Tags"
+          ],
+          "limitations": {
+            "message_limit": 3000
+          },
+          "popular": false
+        },
+        {
+          "name": "Enterprise Chatbot",
+          "price": {
+            "monthly": "Custom",
+            "yearly": "Custom"
+          },
+          "billing_cycle": "per user / month",
+          "ideal_for": "Large scale operations / customization",
+          "features": [
+            "Everything in Advanced +",
+            "Custom Topic Tracker",
+            "Advanced Analytics / BI",
+            "Custom Integrations / Modules",
+            "Priority Support",
+            "Unlimited Users / Messages (negotiable)"
+          ],
+          "limitations": {
+            "message_limit": "Custom"
+          },
+          "popular": false
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,107 @@
+{
+  "hero": {
+    "title": "Transform Customer Experience with AI-Powered Automation",
+    "subtitle": "Streamline your operations, boost customer satisfaction, and drive growth with CallFairy's intelligent automation platform.",
+    "cta": {
+      "primary": {
+        "text": "Start Free Trial",
+        "action": "/signup"
+      },
+      "secondary": {
+        "text": "View Demo",
+        "action": "/demo"
+      }
+    },
+    "heroImage": "https://images.pexels.com/photos/3861969/pexels-photo-3861969.jpeg?auto=compress&cs=tinysrgb&w=800",
+    "features": [
+      "24/7 AI-powered support",
+      "90% faster response times",
+      "Seamless integrations"
+    ]
+  },
+  "features": {
+    "title": "Intelligent Automation That Works",
+    "subtitle": "Discover how CallFairy's AI platform revolutionizes customer interactions",
+    "items": [
+      {
+        "id": "smart-routing",
+        "title": "Smart Call Routing",
+        "description": "AI-powered intelligent routing ensures customers reach the right agent every time, reducing wait times by up to 75%.",
+        "icon": "phone",
+        "image": "https://images.pexels.com/photos/3184435/pexels-photo-3184435.jpeg?auto=compress&cs=tinysrgb&w=400"
+      },
+      {
+        "id": "automated-responses",
+        "title": "Automated Responses",
+        "description": "Natural language processing handles routine inquiries instantly, freeing your team for complex customer needs.",
+        "icon": "message-circle",
+        "image": "https://images.pexels.com/photos/3184298/pexels-photo-3184298.jpeg?auto=compress&cs=tinysrgb&w=400"
+      },
+      {
+        "id": "analytics-insights",
+        "title": "Analytics & Insights", 
+        "description": "Real-time dashboards provide actionable insights to optimize performance and customer satisfaction metrics.",
+        "icon": "bar-chart",
+        "image": "https://images.pexels.com/photos/3184296/pexels-photo-3184296.jpeg?auto=compress&cs=tinysrgb&w=400"
+      },
+      {
+        "id": "seamless-integration",
+        "title": "Seamless Integration",
+        "description": "Connect with your existing CRM, helpdesk, and communication tools in minutes, not months.",
+        "icon": "zap",
+        "image": "https://images.pexels.com/photos/3184287/pexels-photo-3184287.jpeg?auto=compress&cs=tinysrgb&w=400"
+      }
+    ]
+  },
+  "stats": {
+    "title": "Trusted by Industry Leaders",
+    "items": [
+      {
+        "number": "50+",
+        "label": "Companies Trust Us"
+      },
+      {
+        "number": "2K+",
+        "label": "Customers Served"
+      },
+      {
+        "number": "99.9%",
+        "label": "Uptime Guarantee"
+      },
+      {
+        "number": "45%",
+        "label": "Cost Reduction"
+      }
+    ]
+  },
+  "testimonials": {
+    "title": "What Our Customers Say",
+    "items": [
+      {
+        "id": 1,
+        "quote": "AI-driven chat helped us reduce response times by 70%, which significantly boosted customer satisfaction.",
+        "author": "Mr. Taranpreet Singh Kalra",
+        "title": "CEO/Founder",
+        "company": "Digital Hercules Innovation",
+        "avatar": "https://d12aarmt01l54a.cloudfront.net/cms/images/UserMedia-20240523151030/140-140.png"
+      },
+      {
+        "id": 2,
+        "quote": "Automating 60% of our customer queries saved us over 1,200 agent hours per month and improved our service efficiency.",
+        "author": "Mr. Gaurav Jadhav",
+        "title": "CEO and MD",
+        "company": "Bharat Trusted Security",
+        "avatar": "https://bharattrustedsecurity.com/_assets/media/22a9f4e796df8b181c1bef2499345a45.png"
+      },
+      {
+        "id": 3,
+        "quote": "CallFairy has revolutionized how we manage our online product listings and customer inquiries. With AI-powered automation, we’re now able to engage potential customers instantly, capture leads efficiently, and streamline our sales process. Our online presence has never been more impactful.",
+        "author": "Mr. Shirish G Sonawane",
+        "title": "CEO/Founder",
+        "company": "Swastik Furniture",
+        "avatar": "https://content.jdmagicbox.com/comp/nashik/i7/0253px253.x253.161215085749.p3i7/catalogue/swastik-furniture-nashik-road-nashik-spiral-slide-manufacturers-tmc0odbbd8.jpg"
+      }
+
+    ]
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "partners": [
+    {
+      "id": 1,
+      "name": "Digital Hercules Innovation",
+      "logo": "https://d12aarmt01l54a.cloudfront.net/cms/images/UserMedia-20240523151030/140-140.png",
+      "description": "Integration partner for seamless customer service ticketing.",
+      "website": "https://indiaai.gov.in/startup/digital-hercules-innovation"
+    },
+    {
+      "id": 2,
+      "name": "Bharat Security",
+      "logo": "https://bharattrustedsecurity.com/_assets/media/22a9f4e796df8b181c1bef2499345a45.png",
+      "description": "CRM partner enabling unified customer data and AI-powered support journeys.",
+      "website": "https://bharattrustedsecurity.com/"
+    }
+    
+  ]
+}

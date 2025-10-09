@@ -4,7 +4,7 @@
     "tagline": "AI-Powered Automation & Customer Experience Platform",
     "description": "Transform your customer experience with CallFairy's intelligent automation platform. Streamline operations, boost satisfaction, and drive growth with AI-powered solutions.",
     "url": "https://callfairy.com",
-    "logo": "public/images/logo.jpeg",
+    "logo": "/images/logo.jpeg",
     "favicon": "/favicon.ico"
   },
   "contact": {

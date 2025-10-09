@@ -32,19 +32,31 @@
       "name": "Prathmesh Churhe",
       "title": "Co-founder & Sr. AI Engineer",
       "bio": "Prathmesh leads CallFairy with a vision to make AI accessible and human-first. With over a decade in machine learning and enterprise software, he is passionate about ethical AI and customer-first design.",
-      "avatar": "https://media.licdn.com/dms/image/v2/D4D0BAQHzAzatcvRpPg/company-logo_200_200/B4DZaiMk5JH0AI-/0/1746477928480?e=1761177600&v=beta&t=y9Lc8NE9Q6sqqoAm-Vf19RDpg9TWcLwcUZEHf2T16aw"
+      "avatar": "public/images/logo.jpeg"
     },
     {
       "name": "Parikshit Jadhav",
       "title": "Co-founder & Sr. Project Manager",
       "bio": "Parikshit oversees daily operations and customer success initiatives. Her background in operations and strategic planning ensures that CallFairy scales smoothly and delivers on its promises.",
-      "avatar": 	"https://media.licdn.com/dms/image/v2/D4D03AQEKuSlmlS8_VQ/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1683116010213?e=1761177600&v=beta&t=aQdLd6-qP0xBOlKtQtmLjAQvE4VaQndboB-yEFWVt44"
+      "avatar": "public/images/logo.jpeg"
     },
     {
       "name": "Siddhant Pawar",
       "title": "Co-founder & lead Developer",
       "bio": "Siddhant brings over 3 years of experience in CX strategy, helping companies implement service frameworks that foster long-term loyalty.",
-      "avatar": "https://media.licdn.com/dms/image/v2/D4D0BAQHzAzatcvRpPg/company-logo_200_200/B4DZaiMk5JH0AI-/0/1746477928480?e=1761177600&v=beta&t=y9Lc8NE9Q6sqqoAm-Vf19RDpg9TWcLwcUZEHf2T16aw"
+      "avatar": "public/images/logo.jpeg"
+    },
+    {
+      "name": "Sumeet Shinde",
+      "title": "SDE and Lead Backend Django Developer",
+      "bio": "Sumeet is a skilled Software Development Engineer with a strong focus on backend development using Django. With over 2 years of experience, he has led scalable backend projects, optimized APIs, and built robust database architectures. His expertise ensures high-performance applications and smooth system integrations.",
+      "avatar": "public/images/sumeetshine.jpeg"
+    },
+    {
+      "name": "Suyash Bhusar",
+      "title": "SDE and Bot Python Developer",
+      "bio": "Suyash is an experienced Python Developer specializing in automation and bot development. With 1+ years in software engineering, he has built intelligent bots for data scraping, automation, and system monitoring. His strong command over Python and related frameworks enables him to deliver efficient and reliable solutions.",
+      "avatar": "public/images/logo.jpeg"
     }
   ],
   "stats": {

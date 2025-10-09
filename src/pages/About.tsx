@@ -48,7 +48,7 @@ const About: React.FC = () => {
   const data = aboutData as AboutData;
 
   return (
-    <main className="max-w-6xl mx-auto p-8 pt-20 space-y-20 text-gray-800 dark:text-slate-100 bg-white dark:bg-slate-950">
+    <main className="max-w-8xl mx-auto p-8 pt-20 space-y-20 text-gray-800 dark:text-slate-100 bg-white dark:bg-slate-950">
       {/* Header */}
       <header className="space-y-3">
         <h1 className="text-4xl font-extrabold text-center text-gray-900 dark:text-white">

@@ -38,46 +38,8 @@
       ],
       "cta": "Watch Videos",
       "color": "purple"
-    },
-    {
-      "icon": "FileText",
-      "title": "Case Studies",
-      "description": "Real-world success stories from businesses using CallFairy to transform operations.",
-      "items": [
-        "Industry Examples",
-        "ROI Results",
-        "Implementation Stories",
-        "Best Practices"
-      ],
-      "cta": "Read Stories",
-      "color": "orange"
-    },
-    {
-      "icon": "Users",
-      "title": "Webinars",
-      "description": "Live and recorded sessions covering AI automation trends and CallFairy features.",
-      "items": [
-        "Product Demos",
-        "Industry Insights",
-        "Expert Panels",
-        "Q&A Sessions"
-      ],
-      "cta": "Join Webinar",
-      "color": "indigo"
-    },
-    {
-      "icon": "Lightbulb",
-      "title": "Use Case Library",
-      "description": "Explore hundreds of automation scenarios organized by industry and function.",
-      "items": [
-        "Industry Templates",
-        "Workflow Examples",
-        "Integration Patterns",
-        "Success Metrics"
-      ],
-      "cta": "Explore Cases",
-      "color": "red"
     }
+    
   ]
- 
+
 }

@@ -29,18 +29,25 @@ const Header: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const [dropdownOpen, setDropdownOpen] = useState(false);
-  const [dark, setDark] = useState<boolean>(() => {
-    if (typeof window === 'undefined') return false;
-    const saved = localStorage.getItem('theme');
-    if (saved) return saved === 'dark';
-    return window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
-  });
+  const [productsDropdownOpen, setProductsDropdownOpen] = useState(false); // New state for Products dropdown
+  const [dark, setDark] = useState<boolean>(false);
+  
   const location = useLocation();
   const dropdownRef = useRef<HTMLDivElement>(null);
+  const productsDropdownRef = useRef<HTMLDivElement>(null); // New ref for Products dropdown
 
-  // Close dropdown if clicking outside
+  // Close dropdowns if clicking outside
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
+      // Check Products dropdown
+      if (
+        productsDropdownRef.current &&
+        !productsDropdownRef.current.contains(event.target as Node)
+      ) {
+        setProductsDropdownOpen(false);
+      }
+      
+      // Check More dropdown
       if (
         dropdownRef.current &&
         !dropdownRef.current.contains(event.target as Node)
@@ -48,6 +55,7 @@ const Header: React.FC = () => {
         setDropdownOpen(false);
       }
     };
+    
     document.addEventListener('mousedown', handleClickOutside);
     return () => document.removeEventListener('mousedown', handleClickOutside);
   }, []);
@@ -56,16 +64,18 @@ const Header: React.FC = () => {
   useEffect(() => {
     setIsMenuOpen(false);
     setDropdownOpen(false);
+    setProductsDropdownOpen(false);
   }, [location.pathname]);
 
   // Handle scroll state
   useEffect(() => {
+    window.scrollTo(0,0)
     const handleScroll = () => {
       setScrolled(window.scrollY > 50);
     };
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
+  }, [location.pathname]);
 
   // Apply theme
   useEffect(() => {
@@ -81,6 +91,7 @@ const Header: React.FC = () => {
 
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
   const toggleDropdown = () => setDropdownOpen(!dropdownOpen);
+  const toggleProductsDropdown = () => setProductsDropdownOpen(!productsDropdownOpen);
 
   return (
     <motion.header
@@ -106,123 +117,157 @@ const Header: React.FC = () => {
 
           {/* Desktop Navigation */}
           <nav className="hidden lg:flex items-center space-x-8 relative">
-            {/* Products submenu (CallFairy AI Platform) */}
-            <details className="relative group" role="list" aria-label="Products menu">
-              <summary
-                className="list-none cursor-pointer text-sm font-medium transition-colors duration-200 text-gray-800 dark:text-gray-100 hover:text-blue-600 dark:hover:text-blue-400 flex items-center gap-2"
-                aria-haspopup="menu"
-                aria-expanded={undefined}
+            {/* Products submenu - FIXED VERSION */}
+            <div
+              className="relative"
+              ref={productsDropdownRef}
+              onMouseEnter={() => setProductsDropdownOpen(true)}
+              onMouseLeave={() => setProductsDropdownOpen(false)}
+            >
+              <button
+                onClick={toggleProductsDropdown}
+                className={`flex items-center space-x-1 text-sm font-medium transition-colors duration-200 cursor-pointer ${
+                  productsDropdownOpen
+                    ? 'text-blue-600 dark:text-blue-400'
+                    : scrolled
+                    ? 'text-gray-700 dark:text-gray-200'
+                    : 'text-gray-800 dark:text-gray-100'
+                }`}
+                aria-haspopup="true"
+                aria-expanded={productsDropdownOpen}
               >
-                Products
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="transition-transform group-open:rotate-180">
-                  <polyline points="6 9 12 15 18 9"></polyline>
+                <span>Products</span>
+                <svg
+                  className={`w-4 h-4 ml-1 transition-transform ${
+                    productsDropdownOpen ? 'rotate-180' : 'rotate-0'
+                  }`}
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M19 9l-7 7-7-7"
+                  ></path>
                 </svg>
-              </summary>
-              <div
-                className="absolute top-full left-0 mt-2 w-[28rem] bg-white dark:bg-slate-900 border border-gray-200 dark:border-slate-700 rounded-xl shadow-xl overflow-hidden z-50"
-                role="menu"
-                aria-label="CallFairy AI Platform products"
-              >
-                <div className="p-4">
-                  <h3 className="text-xs uppercase tracking-wider text-gray-500 dark:text-gray-400 mb-3">CallFairy AI Platform</h3>
-                  <ul className="space-y-2" role="none">
-                    {/* EchoFairy */}
-                    <li role="none">
-                      <a href="/echofairy" role="menuitem" className="flex items-start gap-3 p-3 rounded-lg hover:bg-gray-50 dark:hover:bg-slate-800 transition-colors">
-                        <span className="mt-0.5" aria-hidden>
-                          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-blue-600 dark:text-blue-400">
-                            <circle cx="12" cy="12" r="9"></circle>
-                            <path d="M8 12h8"></path>
-                          </svg>
-                        </span>
-                        <span className="flex-1">
-                          <span className="flex items-center gap-2 text-sm font-semibold text-gray-900 dark:text-white">
-                            EchoFairy
-                            <span className="text-[10px] tracking-wide uppercase bg-gray-100 dark:bg-slate-800 text-gray-700 dark:text-gray-300 px-2 py-0.5 rounded">Coming soon</span>
-                          </span>
-                          <span className="block text-sm text-gray-600 dark:text-gray-300">AI-powered CRM — smarter leads, better business</span>
-                        </span>
-                      </a>
-                    </li>
-                    {/* Migsheet */}
-                    <li role="none">
-                      <a href="/migsheet" role="menuitem" className="flex items-start gap-3 p-3 rounded-lg hover:bg-gray-50 dark:hover:bg-slate-800 transition-colors">
-                        <span className="mt-0.5" aria-hidden>
-                          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-green-600 dark:text-green-400">
-                            <rect x="4" y="4" width="16" height="16" rx="2"></rect>
-                            <path d="M8 4v16M16 4v16"></path>
-                          </svg>
-                        </span>
-                        <span className="flex-1">
-                          <span className="flex items-center gap-2 text-sm font-semibold text-gray-900 dark:text-white">
-                            Migsheet
-                            <span className="text-[10px] tracking-wide uppercase bg-gray-100 dark:bg-slate-800 text-gray-700 dark:text-gray-300 px-2 py-0.5 rounded">Coming soon</span>
-                          </span>
-                          <span className="block text-sm text-gray-600 dark:text-gray-300">AI-powered spreadsheet workflows</span>
-                        </span>
-                      </a>
-                    </li>
-                    {/* Fairybots */}
-                    <li role="none">
-                      <a href="/fairybots" role="menuitem" className="flex items-start gap-3 p-3 rounded-lg hover:bg-gray-50 dark:hover:bg-slate-800 transition-colors">
-                        <span className="mt-0.5" aria-hidden>
-                          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-purple-600 dark:text-purple-400">
-                            <rect x="3" y="11" width="18" height="8" rx="2"></rect>
-                            <circle cx="8" cy="15" r="1"></circle>
-                            <circle cx="12" cy="15" r="1"></circle>
-                            <circle cx="16" cy="15" r="1"></circle>
-                          </svg>
-                        </span>
-                        <span className="flex-1">
-                          <span className="flex items-center gap-2 text-sm font-semibold text-gray-900 dark:text-white">Fairybots</span>
-                          <span className="block text-sm text-gray-600 dark:text-gray-300">AI bots for customer support (WhatsApp, other channels, web chatbot)</span>
-                        </span>
-                      </a>
-                    </li>
-                    {/* Fairygentic Agents */}
-                    <li role="none">
-                      <a href="/fairygentic-agents" role="menuitem" className="flex items-start gap-3 p-3 rounded-lg hover:bg-gray-50 dark:hover:bg-slate-800 transition-colors">
-                        <span className="mt-0.5" aria-hidden>
-                          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-teal-600 dark:text-teal-400">
-                            <path d="M12 2v20M2 12h20"></path>
-                          </svg>
-                        </span>
-                        <span className="flex-1">
-                          <span className="flex items-center gap-2 text-sm font-semibold text-gray-900 dark:text-white">
-                          Fairygentic Agents
-                            <span className="text-[10px] tracking-wide uppercase bg-gray-100 dark:bg-slate-800 text-gray-700 dark:text-gray-300 px-2 py-0.5 rounded">Coming soon</span>
-                          </span>
-                          <span className="block text-sm text-gray-600 dark:text-gray-300">Create AI assistants for any task</span>
-                        </span>
-                      </a>
-                    </li>
-                    {/* Fairybots */}
-                    <li role="none">
-                      <a href="/fairybots" role="menuitem" className="flex items-start gap-3 p-3 rounded-lg hover:bg-gray-50 dark:hover:bg-slate-800 transition-colors">
-                        <span className="mt-0.5" aria-hidden>
-                          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-orange-600 dark:text-orange-400">
-                            <path d="M4 12h16M4 6h10M4 18h6"></path>
-                          </svg>
-                        </span>
-                        <span className="flex-1">
-                          <span className="flex items-center gap-2 text-sm font-semibold text-gray-900 dark:text-white">
-                            Fairybots
-                            <span className="text-[10px] tracking-wide uppercase bg-gray-100 dark:bg-slate-800 text-gray-700 dark:text-gray-300 px-2 py-0.5 rounded">Coming soon</span>
-                          </span>
-                          <span className="block text-sm text-gray-600 dark:text-gray-300">AI bots for customer support (WhatsApp, other channels, web chatbot)</span>
-                        </span>
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-                {/* Footer actions */}
-                <div className="px-4 py-3 bg-gray-50 dark:bg-slate-800 border-t border-gray-200 dark:border-slate-700 flex flex-wrap gap-3" role="group" aria-label="Products footer">
-                  <a href="/templates" className="text-sm font-medium text-gray-700 dark:text-gray-200 hover:text-blue-600 dark:hover:text-blue-400">Explore templates</a>
-                  <a href="/use-cases" className="text-sm font-medium text-gray-700 dark:text-gray-200 hover:text-blue-600 dark:hover:text-blue-400">Explore N8N Solutions</a>
-                  <a href="/early-access" className="text-sm font-medium text-gray-700 dark:text-gray-200 hover:text-blue-600 dark:hover:text-blue-400">Join CallFairy Early Access</a>
-                </div>
-              </div>
-            </details>
+              </button>
+              
+              <AnimatePresence>
+                {productsDropdownOpen && (
+                  <motion.div
+                    initial={{ opacity: 0, y: -10 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    exit={{ opacity: 0, y: -10 }}
+                    className="absolute top-full left-0 mt-2 w-[28rem] bg-white dark:bg-slate-900 border border-gray-200 dark:border-slate-700 rounded-xl shadow-xl overflow-hidden z-50"
+                    role="menu"
+                    aria-label="CallFairy AI Platform products"
+                  >
+                    <div className="p-4">
+                      <h3 className="text-xs uppercase tracking-wider text-gray-500 dark:text-gray-400 mb-3">CallFairy AI Platform</h3>
+                      <ul className="space-y-2" role="none">
+                        {/* EchoFairy */}
+                        <li role="none">
+                          <a href="/echofairy" role="menuitem" className="flex items-start gap-3 p-3 rounded-lg hover:bg-gray-50 dark:hover:bg-slate-800 transition-colors">
+                            <span className="mt-0.5" aria-hidden>
+                              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-blue-600 dark:text-blue-400">
+                                <circle cx="12" cy="12" r="9"></circle>
+                                <path d="M8 12h8"></path>
+                              </svg>
+                            </span>
+                            <span className="flex-1">
+                              <span className="flex items-center gap-2 text-sm font-semibold text-gray-900 dark:text-white">
+                                EchoFairy
+                                <span className="text-[10px] tracking-wide uppercase bg-gray-100 dark:bg-slate-800 text-gray-700 dark:text-gray-300 px-2 py-0.5 rounded">Coming soon</span>
+                              </span>
+                              <span className="block text-sm text-gray-600 dark:text-gray-300">AI-powered CRM — smarter leads, better business</span>
+                            </span>
+                          </a>
+                        </li>
+                        {/* Migsheet */}
+                        <li role="none">
+                          <a href="/migsheet" role="menuitem" className="flex items-start gap-3 p-3 rounded-lg hover:bg-gray-50 dark:hover:bg-slate-800 transition-colors">
+                            <span className="mt-0.5" aria-hidden>
+                              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-green-600 dark:text-green-400">
+                                <rect x="4" y="4" width="16" height="16" rx="2"></rect>
+                                <path d="M8 4v16M16 4v16"></path>
+                              </svg>
+                            </span>
+                            <span className="flex-1">
+                              <span className="flex items-center gap-2 text-sm font-semibold text-gray-900 dark:text-white">
+                                Migsheet
+                                <span className="text-[10px] tracking-wide uppercase bg-gray-100 dark:bg-slate-800 text-gray-700 dark:text-gray-300 px-2 py-0.5 rounded">Coming soon</span>
+                              </span>
+                              <span className="block text-sm text-gray-600 dark:text-gray-300">AI-powered spreadsheet workflows</span>
+                            </span>
+                          </a>
+                        </li>
+                        {/* Fairybots */}
+                        <li role="none">
+                          <a href="/fairybots" role="menuitem" className="flex items-start gap-3 p-3 rounded-lg hover:bg-gray-50 dark:hover:bg-slate-800 transition-colors">
+                            <span className="mt-0.5" aria-hidden>
+                              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-purple-600 dark:text-purple-400">
+                                <rect x="3" y="11" width="18" height="8" rx="2"></rect>
+                                <circle cx="8" cy="15" r="1"></circle>
+                                <circle cx="12" cy="15" r="1"></circle>
+                                <circle cx="16" cy="15" r="1"></circle>
+                              </svg>
+                            </span>
+                            <span className="flex-1">
+                              <span className="flex items-center gap-2 text-sm font-semibold text-gray-900 dark:text-white">Fairybots</span>
+                              <span className="block text-sm text-gray-600 dark:text-gray-300">AI bots for customer support (WhatsApp, other channels, web chatbot)</span>
+                            </span>
+                          </a>
+                        </li>
+                        {/* Fairygentic Agents */}
+                        <li role="none">
+                          <a href="/fairygentic-agents" role="menuitem" className="flex items-start gap-3 p-3 rounded-lg hover:bg-gray-50 dark:hover:bg-slate-800 transition-colors">
+                            <span className="mt-0.5" aria-hidden>
+                              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-teal-600 dark:text-teal-400">
+                                <path d="M12 2v20M2 12h20"></path>
+                              </svg>
+                            </span>
+                            <span className="flex-1">
+                              <span className="flex items-center gap-2 text-sm font-semibold text-gray-900 dark:text-white">
+                              Fairygentic Agents
+                                <span className="text-[10px] tracking-wide uppercase bg-gray-100 dark:bg-slate-800 text-gray-700 dark:text-gray-300 px-2 py-0.5 rounded">Coming soon</span>
+                              </span>
+                              <span className="block text-sm text-gray-600 dark:text-gray-300">Create AI assistants for any task</span>
+                            </span>
+                          </a>
+                        </li>
+                        {/* AI-Calling-Agent */}
+                        <li role="none">
+                          <a href="/ai-calling-agent" role="menuitem" className="flex items-start gap-3 p-3 rounded-lg hover:bg-gray-50 dark:hover:bg-slate-800 transition-colors">
+                            <span className="mt-0.5" aria-hidden>
+                              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-orange-600 dark:text-orange-400">
+                                <path d="M4 12h16M4 6h10M4 18h6"></path>
+                              </svg>
+                            </span>
+                            <span className="flex-1">
+                              <span className="flex items-center gap-2 text-sm font-semibold text-gray-900 dark:text-white">
+                                AI Calling Agent
+                                <span className="text-[10px] tracking-wide uppercase bg-gray-100 dark:bg-slate-800 text-gray-700 dark:text-gray-300 px-2 py-0.5 rounded">Coming soon</span>
+                              </span>
+                              <span className="block text-sm text-gray-600 dark:text-gray-300">AI-powered calling agent that automates outbound and inbound customer calls with natural language understanding.</span>
+                            </span>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                    {/* Footer actions */}
+                    <div className="px-4 py-3 bg-gray-50 dark:bg-slate-800 border-t border-gray-200 dark:border-slate-700 flex flex-wrap gap-3" role="group" aria-label="Products footer">
+                      <a href="/templates" className="text-sm font-medium text-gray-700 dark:text-gray-200 hover:text-blue-600 dark:hover:text-blue-400">Explore templates</a>
+                      <a href="/use-cases" className="text-sm font-medium text-gray-700 dark:text-gray-200 hover:text-blue-600 dark:hover:text-blue-400">Explore N8N Solutions</a>
+                      <a href="/early-access" className="text-sm font-medium text-gray-700 dark:text-gray-200 hover:text-blue-600 dark:hover:text-blue-400">Join CallFairy Early Access</a>
+                    </div>
+                  </motion.div>
+                )}
+              </AnimatePresence>
+            </div>
+
             {navigation.mainNav.map((item) =>
               item.children ? (
                 <div
@@ -268,14 +313,14 @@ const Header: React.FC = () => {
                         initial={{ opacity: 0, y: -10 }}
                         animate={{ opacity: 1, y: 0 }}
                         exit={{ opacity: 0, y: -10 }}
-                        className="absolute top-full mt-2 w-40 bg-white border border-gray-200 rounded-md shadow-lg z-50"
+                        className="absolute top-full mt-2 w-40 bg-white dark:bg-slate-900 border border-gray-200 dark:border-slate-700 rounded-md shadow-lg z-50"
                       >
                         <ul className="py-2">
                           {item.children.map((child) => (
                             <li key={child.id}>
                               <Link
                                 to={child.path!}
-                                className="block px-4 py-2 text-gray-700 hover:bg-blue-50 hover:text-blue-600 transition-colors"
+                                className="block px-4 py-2 text-gray-700 dark:text-gray-200 hover:bg-blue-50 dark:hover:bg-slate-800 hover:text-blue-600 transition-colors"
                                 onClick={() => setDropdownOpen(false)}
                               >
                                 {child.label}
@@ -305,6 +350,7 @@ const Header: React.FC = () => {
             )}
           </nav>
 
+          
           {/* CTA Buttons */}
           <div className="hidden lg:flex items-center space-x-4">
             <button
@@ -339,7 +385,7 @@ const Header: React.FC = () => {
           </button>
         </div>
 
-        {/* Mobile Menu */}
+        {/* Mobile Menu - unchanged */}
         <AnimatePresence>
           {isMenuOpen && (
             <motion.div

@@ -155,7 +155,7 @@ const About: React.FC = () => {
               <p className="text-center text-indigo-600 dark:text-indigo-400 font-medium">
                 {member.title}
               </p>
-              <p className="mt-3 text-gray-700 dark:text-gray-300 text-sm leading-snug">
+              <p className="mt-3 text-gray-700 dark:text-gray-300 text-sm leading-relaxed text-justify max-w-prose [text-justify:inner-word] [hyphens:auto]">
                 {member.bio}
               </p>
             </article>

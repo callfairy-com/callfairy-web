@@ -115,8 +115,12 @@ const Pricing = () => {
           >
             <motion.span
               layout
+              transition={{type: "spring", stiffness: 500, damping: 30}}
               className={`bg-white w-6 h-6 rounded-full shadow-sm flex items-center justify-center`}
               style={{ boxShadow: '0 4px 10px rgba(2,6,23,0.08)' }}
+              animate={{
+                x:billing === 'monthly' ? 0 : 24,
+              }}
             />
           </button>
           <span className={`text-sm ${billing === 'yearly' ? 'font-semibold' : 'text-slate-500'}`}>Yearly</span>
@@ -147,11 +151,11 @@ const Pricing = () => {
                       setActiveGroup(next);
                     }
                   }}
-                  className={`relative px-4 py-2 rounded-full focus:outline-none transition-all text-sm ${active ? 'bg-slate-900 text-white' : 'bg-slate-100 text-slate-700'}`}
+                  className={`relative px-4 py-2 rounded-full focus:outline-none transition-all duration-200 text-sm ${active ? 'bg-blue-600 text-white shadow-sm dark:bg-blue-500 dark:text-white' : 'bg-slate-100 text-slate-700 hover:bg-blue-50 hover:text-blue-700 dark:bg-slate-800 dark:text-slate-300 dark:hover:bg-blue-900/30 dark:hover:text-blue-300'}`}
                 >
                   {val.title || key.replace(/_/g, ' ')}
                   {val.plans?.some((p: any) => p.popular) && (
-                    <span className="ml-2 inline-block text-xs px-2 py-0.5 bg-amber-100 text-amber-700 rounded-full">Popular</span>
+                    <span className="ml-2 inline-block text-xs px-2 py-0.5 bg-amber-100 text-amber-700 rounded-full dark:bg-amber-900/50 dark:text-amber-300">Popular</span>
                   )}
                 </button>
               );
@@ -264,7 +268,7 @@ const Pricing = () => {
                           </button>
                         ) : (
                           <button
-                            className={`w-full inline-flex items-center justify-center gap-2 rounded-lg py-3 px-4 ${isFree ? 'bg-emerald-600 text-white' : 'bg-slate-900 text-white'} font-semibold shadow hover:opacity-95 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-slate-300`}
+                            className={`w-full inline-flex items-center justify-center gap-2 rounded-lg py-3 px-4 font-semibold shadow hover:opacity-95 focus:outline-none focus:ring-2 focus:ring-offset-2 ${isFree ? 'bg-emerald-600 text-white focus:ring-emerald-300 dark:bg-emerald-500' : 'bg-slate-900 text-white focus:ring-slate-300 dark:bg-slate-700 dark:focus:ring-slate-400'} font-semibold shadow hover:opacity-95 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-slate-300`}
                             onClick={() => alert(`Selected ${plan.name} (${billing}) - ${isNumeric(priceVal) ? formatINR(priceVal) : String(priceVal)}`)}
                           >
                             {isFree ? 'Get Started' : 'Choose plan'}

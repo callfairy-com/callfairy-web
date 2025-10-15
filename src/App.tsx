@@ -3,7 +3,6 @@ import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-route
 
 import Header from './components/Layout/Header';
 import Footer from './components/Layout/Footer';
-import CustomCursor from './components/UI/CustomCursor';
 import { AnimatePresence, motion } from 'framer-motion';
 
 import Home from './pages/Home';
@@ -50,7 +49,7 @@ const AppContent: React.FC = () => {
 
   return (
     <div className="min-h-screen bg-white">
-      <CustomCursor />
+      
       <Header />
 
       <main>

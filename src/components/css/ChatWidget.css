@@ -60,6 +60,7 @@
 
 /* Close button */
 .chat-widget .close-btn {
+  width: auto;
   background: transparent;
   color: white;
   font-size: 18px;
@@ -173,6 +174,7 @@
 .chat-widget button:hover,
 .chat-widget .chat-btn:hover {
   background: linear-gradient(135deg, #4338ca, #2563eb);
+  color: white;
   transform: scale(1.02);
 }
 

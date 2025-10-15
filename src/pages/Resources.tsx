@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { BookOpen, Calculator, Video, FileText, Users, Lightbulb } from 'lucide-react';
+import { BookOpen, Calculator, Video } from 'lucide-react';
 
 interface Resource {
   icon: string;
@@ -86,9 +86,7 @@ const Resources: React.FC = () => {
                 {resource.icon === 'BookOpen' && <BookOpen className="w-8 h-8" />}
                 {resource.icon === 'Calculator' && <Calculator className="w-8 h-8" />}
                 {resource.icon === 'Video' && <Video className="w-8 h-8" />}
-                {resource.icon === 'FileText' && <FileText className="w-8 h-8" />}
-                {resource.icon === 'Users' && <Users className="w-8 h-8" />}
-                {resource.icon === 'Lightbulb' && <Lightbulb className="w-8 h-8" />}
+                
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-4 group-hover:text-blue-600 transition-colors">{resource.title}</h3>
               <p className="text-gray-600 mb-6 leading-relaxed">{resource.description}</p>

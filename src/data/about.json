@@ -32,31 +32,37 @@
       "name": "Prathmesh Churhe",
       "title": "Co-founder & Sr. AI Engineer",
       "bio": "Prathmesh leads CallFairy with a vision to make AI accessible and human-first. With over a decade in machine learning and enterprise software, he is passionate about ethical AI and customer-first design.",
-      "avatar": "public/images/logo.jpeg"
+      "avatar": "/images/logo.jpeg"
     },
     {
       "name": "Parikshit Jadhav",
       "title": "Co-founder & Sr. Project Manager",
       "bio": "Parikshit oversees daily operations and customer success initiatives at CallFairy. His expertise in operations and strategic planning ensures smooth scaling and consistent delivery on the company’s promises.",
-      "avatar": "public/images/logo.jpeg"
+      "avatar": "/images/logo.jpeg"
     },
     {
       "name": "Siddhant Pawar",
       "title": "Co-founder & lead Developer",
-      "bio": "Siddhant brings over 3 years of experience in CX strategy, helping companies implement effective service frameworks that enhance customer experience and foster lasting loyalty.",
-      "avatar": "public/images/logo.jpeg"
+      "bio": "Siddhant brings years of experience in CX strategy, helping companies implement effective service frameworks that enhance customer experience and foster lasting loyalty.",
+      "avatar": "/images/logo.jpeg"
     },
     {
       "name": "Sumeet Shinde",
       "title": "SDE and Lead Backend Django Developer",
       "bio": "Sumeet is a skilled Software Development Engineer with a strong focus on backend development using Django. With over 2 years of experience, he has led scalable backend projects, optimized APIs, and built robust database architectures. His expertise ensures high-performance applications and smooth system integrations.",
-      "avatar": "public/images/sumeetshine.jpeg"
+      "avatar": "/images/sumeetshine.jpeg"
     },
     {
       "name": "Suyash Bhusar",
       "title": "SDE and Bot Python Developer",
       "bio": "Suyash is an experienced Python Developer specializing in automation and bot development. With 1+ years in software engineering, he has built intelligent bots for data scraping, automation, and system monitoring. His strong command over Python and related frameworks enables him to deliver efficient and reliable solutions.",
-      "avatar": "public/images/logo.jpeg"
+      "avatar": "/images/logo.jpeg"
+    },
+    {
+      "name": "Pramod Pansare",
+      "title": "Marketing Strategist",
+      "bio": "Pramod Pansare is a results-driven Marketing Strategy Planner with a keen eye for market trends and consumer behavior. he crafts data-backed strategies and specializes in developing targeted marketing campaigns that drive engagement and growth.",
+      "avatar": "/images/logo.jpeg"
     }
   ],
   "stats": {
